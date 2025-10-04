@@ -75,3 +75,11 @@ A rendszer célzottan egy **egyszerű, személyes használatra szánt webalkalma
 ## 8. Képernyőtervek
 
 ## 9. Forgatókönyvek
+
+**Stílusos Stella** minden nap imádott csinosan és az alkalomhoz illően öltözködni, de a szekrénye tele volt ruhákkal, amiket már rég elfelejtett. Egy reggel, miközben az időjárás hirtelen lehűlt, Stella rájött, hogy órákig tart, mire kitalálja, mit vegyen fel.
+
+Ekkor talált rá a **SuitUp** webalkalmazásra – egy digitális gardróbra, ahol végre rendszerezhette ruháit. Feltöltötte kedvenc darabjait, megjelölte, melyik illik a tavaszi vagy őszi időszakhoz, és még outfiteket is összeállíthatott belőlük.
+
+Most, amikor bejelentkezik a SuitUpba, a főoldalon azonnal látja az aktuális időjárást, és az alkalmazás ajánl neki néhány tökéletes ruhadarabot az aktuális évszakra. Ha valamelyik outfitje már nem tetszik, egyszerűen átszerkeszti – a SuitUp mindig alkalmazkodik az ízléséhez.
+
+A SuitUp segítségével Stella nemcsak időt spórol, hanem újra felfedezte a saját ruhatárát. 
