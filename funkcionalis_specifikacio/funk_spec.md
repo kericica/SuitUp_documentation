@@ -116,3 +116,5 @@ A SuitUp segítségével Stella nemcsak időt spórol, hanem újra felfedezte a 
 
 - [User Story 1 - Regisztráció és Bejelentkezés](user_stories/user_story_1.md)
 - [User Story 2 - Ruhadarabok kezelése](user_stories/user_story_2.md)
+- [User Story 3 -  Outfitek létrehozása és kezelése](user_stories/user_story_3.md)
+- [User Story 4 - Főoldali megjelenítés és inspiráció](user_stories/user_story_4.md)
