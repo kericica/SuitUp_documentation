@@ -74,6 +74,34 @@ A rendszer célzottan egy **egyszerű, személyes használatra szánt webalkalma
 
 ## 8. Képernyőtervek
 
+### 8.1 Bejelentkezési oldal
+
+![SuitUp! - Bejelentkezesi_oldal](src/bejelentkezes.png)
+
+### 8.2 Regisztrációs oldal
+
+![SuitUp! - Regisztracios_oldal](src/regisztracio.png)
+
+### 8.3 Főoldal
+
+![SuitUp! - Fo_oldal](src/fo_oldal.png)
+
+### 8.4 Ruhadarabok oldal
+
+![SuitUp! - Ruhadarabok_oldal](src/ruhadarabok.png)
+
+### 8.5 Outfitek oldal
+
+![SuitUp! - Outfitek_oldal](src/outfitek.png)
+
+### 8.6 Új ruhadarab feltöltése oldal
+
+![SuitUp! - Uj_ruhadarab_feltoltese_oldal](src/uj_ruhadarab.png)
+
+### 8.7 Új outfit készítése oldal
+
+![SuitUp! - Uj_outfit_keszitese_oldal](src/uj_outfit.png)
+
 ## 9. Forgatókönyvek
 
 **Stílusos Stella** minden nap imádott csinosan és az alkalomhoz illően öltözködni, de a szekrénye tele volt ruhákkal, amiket már rég elfelejtett. Egy reggel, miközben az időjárás hirtelen lehűlt, Stella rájött, hogy órákig tart, mire kitalálja, mit vegyen fel.
