@@ -83,3 +83,8 @@ Ekkor talált rá a **SuitUp** webalkalmazásra – egy digitális gardróbra, a
 Most, amikor bejelentkezik a SuitUpba, a főoldalon azonnal látja az aktuális időjárást, és az alkalmazás ajánl neki néhány tökéletes ruhadarabot az aktuális évszakra. Ha valamelyik outfitje már nem tetszik, egyszerűen átszerkeszti – a SuitUp mindig alkalmazkodik az ízléséhez.
 
 A SuitUp segítségével Stella nemcsak időt spórol, hanem újra felfedezte a saját ruhatárát. 
+
+### User Stories
+
+- [User Story 1 - Regisztráció és Bejelentkezés](user_stories/user_story_1.md)
+- [User Story 2 - Ruhadarabok kezelése](user_stories/user_story_2.md)
