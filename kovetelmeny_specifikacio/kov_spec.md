@@ -10,6 +10,27 @@
 
 ## 5. A rendszerre vonatkozó szabályok
 
+A rendszer fejlesztése és működése során figyelembe kell venni a vonatkozó adatvédelmi, szerzői jogi és etikai
+előírásokat.
+
+### Adatvédelem
+
+- Mivel az alkalmazás lehetőséget ad a felhasználói **regisztrációra és bejelentkezésre**, a felhasználók személyes
+  adatait a **GDPR** (Európai Unió Általános Adatvédelmi Rendelete) előírásainak megfelelően
+  kell kezelni.
+- A személyes adatok kizárólag a rendszer működéséhez szükséges mértékben kerülhetnek felhasználásra.
+- Az adatokat harmadik félnek továbbítani **nem megengedett**
+
+### Szerzői jogok
+
+- Az alkalmazásban megjelenő képek (pl. ruhadarabok, outfitek) **nem sérthetik más személyek szerzői jogait**.
+- Csak a felhasználó által készített, illetve szabadon felhasználható képek használhatók fel.
+
+### Etikai és tartalmi megfelelőség
+
+- Az alkalmazás célközönsége **minden korosztály**, ezért a megjelenített tartalmaknak **nem szabad erőszakos,
+  felnőtteknek szánt, diszkriminatív vagy káros tartalmakat** tartalmazniuk.
+
 ## 6. Jelenlegi üzleti folyamatok modellje
 
 ## 7. Igényelt üzleti folyamatok
