@@ -4,7 +4,33 @@
 
 ### 1.1 A rendszer céljai
 
+A rendszer célja egy olyan **webalkalmazás** fejlesztése, amely segíti a felhasználókat ruhadarabjaik rendszerezésében,
+nyilvántartásában és outfitjeik megtervezésében.  
+A felhasználók regisztráció után saját ruhatárat hozhatnak létre, ahol a ruhadarabokat különféle jellemzők alapján kezelhetik.
+
+A rendszer biztosítja:
+
+- új ruhadarabok és outfitek **feltöltését, módosítását és törlését**,
+- a **legkedveltebb és aktuális évszakhoz illő ruhadarabok** megjelenítését a főoldalon,
+- **szűrési lehetőséget** a ruhadarabok és outfitek között,
+- valamint az **aktuális időjárás megjelenítését** egy külső API segítségével.
+
+A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, amely támogatja a felhasználókat a mindennapi
+öltözködés megtervezésében.
+
 ### 1.2 A rendszer ***NEM*** céljai
+
+A rendszer fejlesztésének nem célja a ruhatárkezelésen túlmutató vagy közösségi funkciók megvalósítása.  
+Kifejezetten **nem cél**, hogy a rendszer:
+
+- **Online kereskedelmi platformként** működjön _(nem biztosít vásárlási, eladási vagy rendelési lehetőséget)_,
+- **Közösségi hálózati funkciókat** valósítson meg _(nincs posztolás, kommentelés, üzenetküldés)_,
+- Lehetővé tegye a **felhasználók közötti adatmegosztást** _(pl. ruhadarabok vagy outfitek megosztását más felhasználókkal)_,
+- **Automatikus ajánlórendszert** _(pl. gépi tanulás alapú outfit-ajánlás)_ tartalmazzon,
+- **Adminisztrátori felületet** vagy többszintű jogosultságkezelést biztosítson,
+- **Mobilalkalmazásként** _(Android/iOS)_ működjön — a cél kizárólag a webes böngésző alapú verzió.
+
+A rendszer célzottan egy **egyszerű, személyes használatra szánt webalkalmazás**, amely a ruhadarabok és outfitek kezelésére koncentrál.
 
 ## 2. Jelenlegi helyzet
 
