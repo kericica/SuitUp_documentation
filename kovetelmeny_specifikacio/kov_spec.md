@@ -21,4 +21,6 @@
 
 ## 8.1 Rendszer áttekintés
 
+![SuitUp! - Rendszer_áttekintő_diagram](src/suit_up_system_overview.png)
+
 ## 9. Fogalomtár
