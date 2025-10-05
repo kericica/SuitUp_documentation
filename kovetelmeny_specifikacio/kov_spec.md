@@ -2,6 +2,10 @@
 
 ## 1. Áttekintés
 
+A "Suit Up" alkalmazás célja egy olyan felület biztosítása, melynek segítségével a felhasználók digitalizálhatják gardróbjukat, és könnyedén állíthatnak össze, jegyezhetnek fel és követhetnek nyomon öltözékeket.
+
+A rendszer támogatja a ruhadarabok fénykép alapú rögzítését, attribútumokkal való jellemzését, valamint az ezekből álló összeállítások kezelését. A kulcsfontosságú funkciók közé tartozik a szűrés, a statisztikák nyomon követése és a valós idejű időjárás-integráció.
+
 ## 2. Jelenlegi helyzet
 
 A mindennapi öltözködés sokak számára nap mint nap időigényes folyamat. 
