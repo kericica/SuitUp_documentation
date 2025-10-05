@@ -104,14 +104,13 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 
 ### 6.1 Aktorok (szereplők) meghatározása
 
-|Aktor neve| Leírás                                                                                                                  |
-|---|-------------------------------------------------------------------------------------------------------------------------|
-|**Regisztrált Felhasználó**| A rendszer elsődleges szereplője, aki a regisztráció és bejelentkezés után kezeli a saját gardróbját.                   |
-|**Külső Időjárás API**| A rendszerrel együttműködő, de külső szolgáltató, amely időjárási adatokat szolgáltat a Főoldal számára *(Open-Meteo)*. |
+|Aktor neve| Leírás                                                                                              |
+|---|-----------------------------------------------------------------------------------------------------|
+|**Regisztrált Felhasználó**| A rendszer egyetlen szereplője, aki a regisztráció és bejelentkezés után kezeli a saját gardróbját. |
 
 ### 6.2 Használati eset diagram
-| ![SuitUp! - Szett oszeállítása](src/szett_osszeallitas_ucd.png) | ![SuitUp! - Szett kiválasztása](src/szett_valasztas_ucd.png) |
-|----|----|
+
+![SuitUp! - Használati eset diagram](src/usecases.png)
 
 ## 7. Követelménylista
 
@@ -181,3 +180,5 @@ A SuitUp segítségével Stella nemcsak időt spórol, hanem újra felfedezte a 
 - [User Story 2 - Ruhadarabok kezelése](user_stories/user_story_2.md)
 - [User Story 3 -  Outfitek létrehozása és kezelése](user_stories/user_story_3.md)
 - [User Story 4 - Főoldali megjelenítés és inspiráció](user_stories/user_story_4.md)
+- [User Story 5 - Szűrési lehetőségek](user_stories/user_story_5.md)
+- [User Story 6 - Időjárás megjelenítése](user_stories/user_story_6.md)
