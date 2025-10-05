@@ -4,6 +4,16 @@
 
 ## 2. Jelenlegi helyzet
 
+A mindennapi öltözködés sokak számára nap mint nap időigényes folyamat. 
+A döntés gyakran stresszt is okoz, hiszen a reggeli rohanás közepette kevés idő jut a megfelelő öltözék kiválasztására.
+A ruhadarabok átláthatóságát nehezíti, hogy azokat csupán fizikailag tároljuk, 
+így a szekrény mélyén rejlő darabok gyakran feledésbe merülnek, miközben néhány kedvenc ruhát újra és újra előveszünk.
+
+Az outfit-összeállítás többnyire spontán döntéseken alapul, és nem támaszkodik semmilyen rendszerre vagy vizuális segítségre.
+Az időjárási tényezők figyelembevételét a legtöbben manuálisan végzik, ami nem mindig eredményez optimális választást.
+Emellett hiányzik az átfogó visszajelzés arról, hogy egyes ruhadarabok mennyire vannak kihasználva,
+illetve mely kombinációk bizonyultak korábban sikeresnek. Mindez hosszú távon megnehezíti a tudatos öltözködést és a gardrób hatékony menedzselését.
+
 ## 3. Vágyálom rendszer
 
 ## 4. Funkcionális követelmények
