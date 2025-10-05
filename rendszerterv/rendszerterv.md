@@ -74,6 +74,34 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 ### 5.5 Képernyőtervek
 
+**Bejelentkezési oldal**
+
+![SuitUp! - Bejelentkezesi_oldal](src/bejelentkezes.png)
+
+**Regisztrációs oldal**
+
+![SuitUp! - Regisztracios_oldal](src/regisztracio.png)
+
+**Főoldal**
+
+![SuitUp! - Fo_oldal](src/fo_oldal.png)
+
+**Ruhadarabok oldal**
+
+![SuitUp! - Ruhadarabok_oldal](src/ruhadarabok.png)
+
+**Outfitek oldal**
+
+![SuitUp! - Outfitek_oldal](src/outfitek.png)
+
+**Új ruhadarab feltöltése oldal**
+
+![SuitUp! - Uj_ruhadarab_feltoltese_oldal](src/uj_ruhadarab.png)
+
+**Új outfit készítése oldal**
+
+![SuitUp! - Uj_outfit_keszitese_oldal](src/uj_outfit.png)
+
 ## 6. Fizikai környezet
 
 ### 6.1 Fejlesztő eszközök
