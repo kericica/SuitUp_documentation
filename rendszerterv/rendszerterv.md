@@ -149,20 +149,7 @@ feldolgozása során:
 
 ### 7.3 Architekturális ábra
 
-```
-[Böngésző]
-    |
-    v
-[Spring Boot alkalmazás]
-    |
-    +-- [Spring Security]
-    |
-    +-- [Controller] --> [DTO / Model attribútumok] --> [Thymeleaf sablonok]
-    |
-    +-- [Service réteg]
-    |
-    +-- [Repository] --> [Entity] --> [PostgreSQL adatbázis]
-```
+![SuitUp! - Architekturális ábra](src/springboot_thymeleaf.png)
 
 ## 8. Adatbázisterv
 
