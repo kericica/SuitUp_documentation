@@ -100,6 +100,8 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 
 ### 5.2 Igényelt üzleti folyamatok diagram
 
+![SuitUp! - Igényelt üzleti folyamatok diagram](src/igenyelt_uzleti_folyamatok.png)
+
 ## 6. Használati esetek
 
 ### 6.1 Aktorok (szereplők) meghatározása
