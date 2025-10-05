@@ -185,3 +185,16 @@ feldolgozása során:
 ## 12. Telepítési / Indítási terv
 
 ## 13. Karbantartási terv
+
+Az alkalmazás folyamatos és megbízható működésének biztosítása érdekében szükséges a rendszer rendszeres és megfelelő
+karbantartása. Mivel az adatok egy relációs adatbázisban (PostgreSQL) kerülnek tárolásra, elengedhetetlen az adatbázis 
+szerver folyamatos felügyelete, biztonsági mentések készítése és az adatbázis optimalizálása. Emellett továbbra is figyelmet 
+kell fordítani a hibák kijavítására, a felhasználói élmény javítására és a webes technológiák fejlődéséből adódó lehetőségek 
+integrálására. Továbbá az új felhasználói igények megjelenésével szükségessé válhat új funkciók beépítése is.
+
+| Karbantartás típusa                       | Karbantartási tevékenység a rendszerben                                                                                                                         |
+|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Corrective Maintenance** (Hibajavító)   | A felhasználók által jelzett hibák kijavítása.                                                                                                                  |
+| **Adaptive Maintenance** (Alkalmazkodó)   | Az alkalmazás kompatibilitásának fenntartása különböző böngészők és verziók között. A felület naprakészen tartása a webes szabványok változásainak megfelelően. |
+| **Perfective Maintenance** (Tökéletesítő) | Új funkciók bevezetése. Felhasználói élmény javítása.                                                                                                           |
+| **Preventive Maintenance** (Megelőző)     | Kódellenőrzés és refaktorálás. Biztonsági szempontok ellenőrzése.                                                                                               |
