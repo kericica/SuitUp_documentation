@@ -47,6 +47,16 @@ előírásokat.
 
 ## 6. Jelenlegi üzleti folyamatok modellje
 
+**A jelenlegi öltözködési folyamat lépései:**
+
+1. **Gardrób áttekintése:** Időigényes folyamat, a legtöbb esetben nem jut idő minden ruhadarab átnézésére.
+2. **Ruhadarabok kiválasztása:** A döntés sokszor nem tudatos. Nagy segítséget jelentene, ha csak a keresésnek megfelelő ruhadarabokból kellene választani.
+3. **Próbálgatás:** A kiválasztott ruhadarabokat fel kell próbálni, hogy megbizonyosodjunk az összeillőségükről.
+4. **Időjárás ellenőrzése:** Ez sokszor elmarad.
+5. **Outfit fejben való megjegyzése:** A jól bevált öltözékeket a felhasználók gyakran elfelejtik, így a folyamatot később újra elölről kell kezdeni.
+
+Ez a folyamat szervezetlen, és nagymértékben az ember memóriájára és idejére épít, ami **átláthatatlanságot és időveszteséget** okoz.
+
 ## 7. Igényelt üzleti folyamatok
 
 ## 8. Követelménylista
