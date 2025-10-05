@@ -147,3 +147,14 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 ![SuitUp! - Rendszer_áttekintő_diagram](src/suit_up_system_overview.png)
 
 ## 9. Fogalomtár
+
+| **Fogalom**             | **Meghatározás**                                                                                           |
+|-------------------------|------------------------------------------------------------------------------------------------------------|
+| **Felhasználó**         | Az a személy, aki regisztrál és használja az alkalmazás funkcióit.                                         |
+| **Ruhadarab**           | A felhasználó által feltöltött, képpel és jellemzőkkel ellátott ruhatári elem.                             |
+| **Outfit / Szett**      | Több ruhadarabból álló összeállítás, amelyet a felhasználó hoz létre és ment el.                           |
+| **Attribútum**          | A ruhadarab jellemző tulajdonsága *(pl. típus, szín, évszak, márka, anyag)*.                               |
+| **Gardrób**             | A felhasználó által feltöltött ruhadarabok gyűjteménye, digitális formában megjelenítve.                   |
+| **CRUD műveletek**      | Alapvető adatkezelési műveletek: létrehozás, olvasás, módosítás, törlés.                                   |
+| **Időjárás-integráció** | Külső adatforrásból (API) származó aktuális időjárási adatok megjelenítése az outfitválasztás támogatásához. |
+

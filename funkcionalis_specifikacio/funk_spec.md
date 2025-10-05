@@ -184,3 +184,17 @@ A SuitUp segítségével Stella nemcsak időt spórol, hanem újra felfedezte a 
 - [User Story 4 - Főoldali megjelenítés és inspiráció](user_stories/user_story_4.md)
 - [User Story 5 - Szűrési lehetőségek](user_stories/user_story_5.md)
 - [User Story 6 - Időjárás megjelenítése](user_stories/user_story_6.md)
+
+## 10. Fogalomtár
+
+| Fogalom                                 | Meghatározás                                                                                                                                           |
+|-----------------------------------------| ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Ruhadarab**                           | A felhasználó által feltöltött egyedi elem (pl. nadrág, póló, kabát), amelyhez jellemzők tartoznak, mint típus, szín, évszak, márka, anyag és kép.     |
+| **Outfit / Szett**                      | Több ruhadarabból összeállított öltözék, amelyet a felhasználó elnevezhet és évszakhoz rendelhet.                                                      |
+| **Felhasználó (Regisztrált felhasználó)** | A rendszer egyetlen aktív szereplője, aki regisztráció és bejelentkezés után használhatja az alkalmazás funkcióit.                                     |
+| **Főoldal / Landing page**              | A bejelentkezés utáni kezdőoldal, amely megjeleníti az aktuális időjárást, az évszakhoz illő és legkedveltebb ruhadarabokat, valamint statisztikákat.  |
+| **Szűrés**                              | Funkció, amely lehetővé teszi a ruhadarabok és outfitek listájának szűkítését meghatározott feltételek (pl. típus, szín, évszak) alapján.              |
+| **Időjárás API**                        | Külső szolgáltatás, amely az aktuális meteorológiai adatokat biztosítja a rendszer számára, megkönnyítve az évszakhoz illő ruhadarabok megjelenítését. |
+| **Statisztika modul**                   | A rendszer azon része, amely elemzi a ruhadarabok és outfitek használatát, és kimutatja a leggyakrabban vagy legritkábban viselt elemeket.             |
+| **Kedvenc ruhadarab**                   | A rendszer által azonosított vagy a felhasználó által megjelölt, leggyakrabban használt ruhadarab.                                                     |
+| **Adatbázis**               | A rendszer háttértára, amelyben minden felhasználói adat, ruhadarab és outfit biztonságosan, strukturált formában kerül tárolásra.                     |
