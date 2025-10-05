@@ -46,6 +46,31 @@ mellett feladata biztosítani a vizuális élményt.
 
 ## 4. Funkcionális követelmények
 
+- **Felhasználó- és Munkamenetkezelés (Hitelesítés)**
+    - Regisztráció: fióklétrehozás *név*, *felhasználónév* és *jelszó* megadásával.
+    - Bejelentkezés: regisztrált felhasználónév-jelszó párossal.
+    - Kijelentkezés
+- **Ruhadarab Kezelés (CRUD műveletek)**
+    - Új darab felvétele (Létrehozás): kép feltöltése, attribútumok *(pl.: típus, évszak, márka, szín, anyag)* megadása.
+    - Elem szerkesztése/törlése
+    - Szűrés/Keresés: rögzített attribútumok *(pl.: típus, évszak, szín, márka, anyag)* alapján.
+- **Összeállítások Kezelés (CRUD műveletek)**
+    - Összeállítás létrehozása és Mentése: feltöltött elemek közötti variáció (típus szerinti gyűjteményekből) és mentés
+      címkék *(pl.: cím, évszak)* megadásának lehetőségével
+    - Szett Módosítása/Törlése
+    - Viselés Követése: manuálisan kezelhető elem a számlálásához.
+- **Galéria *(Gardrób)* Megjelenítés**
+    - Ruhadarab nézet: egy oldal az összes feltöltött ruhadarabnak.
+    - Szett nézet: egy oldal a mentett összeállításoknak (lekicsinyített, kerettel ellátott szerkezetben).
+- **Integrációk és Adatmegjelenítés**
+    - Időjárás-integráció: külső API használatával.
+    - Javaslatok: aktuális évszaknak megfelelő, viselésre ajánlott ruhadarabok listája.
+    - Statisztika: elemek viselési gyakoriságából származó statisztikák.
+- **Felhasználói élményt javító funkciók**
+    - elemek átlátható megjelenítése
+    - harmonikus kinézet
+    - időjáráshoz igazodó üzenetek
+
 ## 5. A rendszerre vonatkozó szabályok
 
 A rendszer fejlesztése és működése során figyelembe kell venni a vonatkozó adatvédelmi, szerzői jogi és etikai
