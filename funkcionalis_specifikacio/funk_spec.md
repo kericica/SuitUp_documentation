@@ -46,6 +46,30 @@ illetve mely kombinációk bizonyultak korábban sikeresnek. Mindez hosszú táv
 
 ## 3. Vágyálom rendszer
 
+Célunk egy innovatív, vizuális és felhasználóbarát alkalmazás fejlesztése, amely központosítja a gardróbkezelést és
+meggyorsítja az öltözékválasztási folyamatot. Eszközöket biztosít a darabok közötti navigáció megkönnyítése érdekében.
+Ilyen eszköz például a ruhadarbak közötti szűrés és azok kategorizálása különböző szempontok alapján, legkedveltebb darabok
+megjelölése. Ez elősegíti a felhasználó számára a lehetőségek közötti átláthatóságot, mely a legoptimálisabb döntés
+meghozatalát kívánja támogatni.
+
+A rendszer használatához regisztráció és bejelentkezés szükséges a személyes
+adatok biztonságos tárolása érdekében.
+
+A rendszer fő erőssége a kényelmes összeállítási felület, ahol a feltöltött ruhadarabokat a felhasználó vizuálisan,
+digitális környezetben tudja egymással variálni.
+Továbbá a rendszer időjárás-előrejelzést jelenít meg a főoldalon, és ennek megfelelően javaslatokat tesz az aktuális évszaknak
+megfelelő ruhadarabokra, ezzel segítve a felhasználót a praktikus döntéshozatalban.
+A főoldalon szintén megjelenítésre kerülő statisztikai adatok segítik a felhasználót gardróbja optimalizálásában. Ez a
+funkció kiemeli a leggyakrabban viselt darabokat, illetve felhívja a figyelmet a túl ritkán választott, feleslegesnek tűnő elemekre.
+
+Ezen felül szeretnénk segítséget nyújtani a darabok összeállítása terén egy funkcióval, ami lehetővé teszi, hogy más
+felhasználók által megosztott összeállítások inspiráljanak egy új megjelenést. Ez a funkció magába foglalja a saját
+ötletek nyílvános megosztását a fentebb kifejtett céllal.
+
+Továbbá szeretnénk, ha a felület használata nem csak praktikus lenne, hanem egyben élményt nyújtana a felhasználónak.
+Ezt az elhatározást szemelőtt tartva kerül megtervezésre a felület kinézete, melynek a könnyen kezelhetőseg megvalósítása
+mellett feladata biztosítani a vizuális élményt.
+
 ## 4. Jelenlegi üzleti folyamatok
 
 **A jelenlegi öltözködési folyamat lépései:**
@@ -80,7 +104,14 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 
 ### 6.1 Aktorok (szereplők) meghatározása
 
+|Aktor neve| Leírás                                                                                                                  |
+|---|-------------------------------------------------------------------------------------------------------------------------|
+|**Regisztrált Felhasználó**| A rendszer elsődleges szereplője, aki a regisztráció és bejelentkezés után kezeli a saját gardróbját.                   |
+|**Külső Időjárás API**| A rendszerrel együttműködő, de külső szolgáltató, amely időjárási adatokat szolgáltat a Főoldal számára *(Open-Meteo)*. |
+
 ### 6.2 Használati eset diagram
+| ![SuitUp! - Szett oszeállítása](src/szett_osszeallitas_ucd.png) | ![SuitUp! - Szett kiválasztása](src/szett_valasztas_ucd.png) |
+|----|----|
 
 ## 7. Követelménylista
 
