@@ -62,6 +62,18 @@ Ez a folyamat szervezetlen, és nagymértékben az ember memóriájára és idej
 
 ### 5.1 Igényelt üzleti folyamatok leírása
 
+A felhasználónak a rendszer használatához **regisztrálnia** kell. Ehhez meg kell adnia a nevét, felhasználónevét és jelszavát,
+majd **be kell jelentkeznie** a fiókjába.
+A sikeres bejelentkezés után a **Főoldalra** navigál, ahol azonnali áttekintést kap az **időjárásról**,
+a viselési **statisztikáiról**, valamint az **aktuális évszaknak megfelelő ajánlásokról**.
+
+A felhasználó a **felső navigációs menün** keresztül elérheti a fő funkciókat:
+- **Új ruhadarab feltöltése**: Az "**Új**" lenyíló menüben választható opció. Ezen a felületen a felhasználó új ruhadarabokat tölthet fel, megadva a következő adatokat: *kép URL, típus, szín, évszak, márka (opcionális), anyag (opcionális)*.
+- **Új outfit létrehozása**: Az "**Új**" lenyíló menüben választható opció. Ezen a felületen új outfiteket tud létrehozni a felhasználó, a korábban feltöltött ruhadarabokból. Nevet adhat az outfiteknek, illetve évszakot rendelhet hozzá.
+- **Ruhadarabok megjelenítése**: A "**Gardróbom**" lenyíló menüben választható opció. Ezen a felületen megjelenik az összes ruhadarab címkékkel ellátva. Lehetőség van **szűrésre** *(típus, szín és évszak alapján)*, **módosításra** és **törlésre**.
+- **Outfitek megjelenítése**: A "**Gardróbom**" lenyíló menüben választható opció. Ezen a felületen megjelenik az összes outfit címkékkel ellátva. Lehetőség van **szűrésre** *(évszak alapján)*, **módosításra** és **törlésre**.
+- **Kijelentkezés**: A **profil ikonon** keresztül, visszairányít a bejelentkezési felületre.
+
 ### 5.2 Igényelt üzleti folyamatok diagram
 
 ## 6. Használati esetek
