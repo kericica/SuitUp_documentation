@@ -72,6 +72,8 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 ### 5.4  Menü-hierarchiák
 
+![SuitUp! - Menü-hierarchiák](src/menu_hierarchia.png)
+
 ### 5.5 Képernyőtervek
 
 **Bejelentkezési oldal**
