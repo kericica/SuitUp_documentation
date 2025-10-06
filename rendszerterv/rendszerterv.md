@@ -73,6 +73,11 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 * A felhasználó megadja a felhasználónevét és a jelszavát, amelyet a rendszer hitelesít.
 * Bejelentkezés után a felhasználó a főoldalra kerül, ahol személyre szabott információkat lát.
 
+#### Kijelentkezés
+
+* A felhasználó a profil ikonra kattintva megnyitja a lenyíló menüt, ahol a "Kijelentkezés" opciót választja.
+* A rendszer bontja a munkamenetet és visszairányítja a felhasználót a Bejelentkezési oldalra.
+
 #### Ruhadarabok kezelése
 
 * **Új ruhadarab létrehozása:** a felhasználó feltölti a ruhadarab képének URL-jét, emellett különböző jellemzőket rendelhet hozzá: típus, szín, évszak, anyag, márka.
@@ -123,9 +128,90 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 ### 5.1 Rendszerszereplők
 
+Esetünkben az egyetlen rendszerszereplő maga a **felhasználó**, aki regisztrál, bejelentkezik,
+ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és statisztikákat.
+
 ### 5.2 Rendszerhasználati esetek és lefutásaik
 
+#### Regisztráció
+* *Lefutás:* Regisztrációs oldal → név, felhasználónév, jelszó megadása → "Regisztráció" gomb → sikeres regisztráció után automatikus átirányítás a Bejelentkezési oldalra.
+
+#### Bejelentkezés
+* *Lefutás:* Bejelentkezési oldal → felhasználónév és jelszó megadása → "Bejelentkezés" gomb → sikeres hitelesítés után automatikus átirányítás a Főoldalra → aktuális időjárás, ajánlások és statisztikák megjelenítése.
+
+#### Új ruhadarab feltöltése
+* *Lefutás:* Navigációs sáv → "Új" → "Ruhadarab feltöltése" → űrlap kitöltése (kép URL, típus, szín, évszak, márka, anyag) → "Mentés" gomb → sikeres mentés után megjelenik a Ruhadarabok oldalon.
+
+#### Ruhadarab módosítása
+* *Lefutás:* "Gardróbom" → "Ruhadarabok" oldal → kiválasztott ruhadarab alatti "Módosítás" gomb → mezők szerkesztése → "Mentés" → frissített adatok megjelennek az oldalon.
+
+#### Ruhadarab törlése
+* *Lefutás:* "Gardróbom" → "Ruhadarabok" oldal → kiválasztott ruhadarab alatti "Törlés" gomb → törlés megerősítése → ruhadarab eltűnik a listából.
+
+#### Ruhadarabok szűrése
+* *Lefutás:* Ruhadarabok oldal → szűrési feltételek megadása (típus, szín, évszak) → a lista frissül a szűrési feltételek alapján.
+
+#### Új outfit létrehozása
+* *Lefutás:* Navigációs sáv → "Új" → "Outfit létrehozása" → korábban feltöltött ruhadarabok kiválasztása → az outfit nevének és évszakának megadása → "Mentés" → outfit megjelenik az Outfitek oldalon.
+
+#### Outfit módosítása
+* *Lefutás:* "Gardróbom" → "Outfitek" oldal → kiválasztott outfit alatti "Módosítás" gomb → ruhadarabok vagy adatok módosítása → "Mentés" → frissített adatok megjelennek az oldalon.
+
+#### Outfit törlése
+* *Lefutás:* "Gardróbom" → "Outfitek" oldal → kiválasztott outfit alatti "Törlés" gomb → törlés megerősítése → outfit eltűnik a listából.
+
+#### Outfitek szűrése
+* *Lefutás:* Outfitek oldal → évszak kiválasztása → a lista frissül a megadott szűrési feltételek alapján.
+
+#### Kijelentkezés
+* *Lefutás:* Profil ikon → lenyíló menü → "Kijelentkezés" → visszairányítás a Bejelentkezési oldalra.
+
 ### 5.3 Határosztályok
+
+#### Bejelentkezési oldal
+* Üdvözlő üzenet
+* Aktuális időjárás megjelenítése
+* Felhasználónév input mező
+* Jelszó input mező
+* "Bejelentkezés" gomb
+* "Regisztráció" gomb (link a Regisztrációs oldalra)
+
+#### Regisztrációs oldal
+* Név input mező
+* Felhasználónév input mező 
+* Jelszó input mező
+* "Regisztráció" gomb (link a Bejelentkezési oldalra)
+
+#### Főoldal
+* Aktuális időjárás megjelenítése
+* Évszaknak megfelelő ruhadarab ajánlás
+* Statisztikák blokk (leggyakrabban viselt ruhadarabok)
+* Navigációs sáv: "Új", "Gardróbom", profil ikon
+
+#### Ruhadarabok oldal
+* Ruhadarabok listája (kártyás elrendezésben, címkékkel)
+* Szűrőmezők: típus, szín, évszak
+* "Módosítás" és "Törlés" gomb ruhadarabonként
+* Navigációs sáv: "Új", "Gardróbom", profil ikon
+
+#### Outfitek oldal
+* Outfitek listája (előnézeti képekkel, címkékkel)
+* Szűrés évszak alapján
+* "Módosítás" és "Törlés" gomb outfitenként
+* Navigációs sáv: "Új", "Gardróbom", profil ikon
+
+#### Új ruhadarab feltöltése oldal
+* Kép URL input mező
+* Típus, szín, évszak, márka, anyag input mezők
+* "Mentés" gomb
+* Navigációs sáv: "Új", "Gardróbom", profil ikon
+
+#### Új outfit létrehozása oldal
+* Ruhadarabok listája (carousel-ben)
+* Outfit név input mező
+* Évszak input mező
+* "Mentés" gomb
+* Navigációs sáv: "Új", "Gardróbom", profil ikon
 
 ### 5.4  Menü-hierarchiák
 
