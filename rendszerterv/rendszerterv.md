@@ -52,9 +52,66 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 ### 3.1 Üzleti szereplők
 
+* **Felhasználó:**
+  A rendszer végfelhasználója, aki regisztrál, bejelentkezik, ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és statisztikákat.
+
+* **Rendszer:**
+  A háttérben futó alkalmazás, amely kezeli a felhasználói műveleteket, tárolja és megjeleníti az adatokat, valamint kommunikál a külső időjárás-API-val.
+
+* **Megrendelő:**
+  A rendszer funkcionális és üzleti igényeit meghatározó fél, aki a fejlesztési követelményeket definiálja.
+
 ### 3.2 Üzleti folyamatok
 
+#### Regisztráció
+
+* A felhasználó regisztrál a rendszerben, megadva nevét, felhasználónevét és jelszavát.
+* A rendszer eltárolja az adatokat, és létrehozza a felhasználói fiókot.
+
+#### Bejelentkezés
+
+* A felhasználó megadja a felhasználónevét és a jelszavát, amelyet a rendszer hitelesít.
+* Bejelentkezés után a felhasználó a főoldalra kerül, ahol személyre szabott információkat lát.
+
+#### Ruhadarabok kezelése
+
+* **Új ruhadarab létrehozása:** a felhasználó feltölti a ruhadarab képének URL-jét, emellett különböző jellemzőket rendelhet hozzá: típus, szín, évszak, anyag, márka.
+* **Módosítás és törlés:** a felhasználó szerkesztheti vagy eltávolíthatja a már feltöltött ruhadarabokat.
+* **Szűrés:** a rendszer lehetővé teszi a ruhadarabok listázásának szűrését típus, szín és évszak alapján.
+* **Megjelenítés:** a felhasználó megtekintheti az összes feltöltött ruhadarabot címkékkel és előnézeti képpel.
+
+#### Outfitek kezelése
+
+* **Új outfit létrehozása:** a felhasználó a feltöltött ruhadarabokból állíthat össze szetteket, amelyekhez nevet és évszakot rendelhet.
+* **Módosítása és törlése:** a rendszer támogatja a korábban mentett kombinációk szerkesztését és eltávolítását.
+* **Szűrés:** a rendszer lehetővé teszi az outfitek listázásának szűrését évszak alapján.
+* **Megjelenítés:** a felhasználó megtekintheti az összes mentett outfitet címkékkel és előnézeti képekkel.
+
+#### Integrációk 
+
+* **Időjárás-integráció:** a rendszer külső API segítségével megjeleníti az aktuális időjárást.
+
+#### Statisztikák és ajánlások
+
+* **Statisztikák:** a rendszer megjeleníti a leggyakrabban viselt ruhadarabokat.
+* **Ajánlások:** a rendszer az aktuális évszakhoz illeszkedő ruhadarabokat javasol.
+
 ### 3.3 Üzleti entitások
+
+* **Felhasználó:**
+  A rendszer regisztrált használója.
+  *  *Attribútumai:* név, felhasználónév, jelszó.
+
+* **Ruhadarab:**
+  A rendszer egyik alapvető entitása.
+  * *Attribútumai:* id, kép-URL, típus, szín, évszak, márka, anyag.
+
+* **Outfit:**
+  Ruhadarabok kombinációja, amelyet a felhasználó hoz létre.
+  * *Attribútumai:* id, cím, évszak, létrehozás dátuma, tartalmazott ruhadarabok.
+
+* **Időjárás-adat:**
+  Külső API-ból származó információ, amely segíti a felhasználót a megfelelő ruhadarabok kiválasztásában.
 
 ## 4. Követelmények
 
