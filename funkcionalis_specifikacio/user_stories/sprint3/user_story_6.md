@@ -19,7 +19,7 @@ Feature: Időjárás megjelenítése
   Scenario: Időjárási adatok megjelenítése az outfitjeim és outfit összeállítás oldalon
     Given a felhasználó az "Outfitjeim" vagy "Outfit összeállítás" oldalon van
     When az alkalmazás betölti az időjárási információkat
-    Then megjeleníti az aktuális időjárást és javaslatot ad az öltözködéshez
+    Then megjeleníti az aktuális időjárást
 
   Scenario: Időjárási adatok betöltésének hibája
     Given az alkalmazás nem tudja elérni az időjárási API-t
