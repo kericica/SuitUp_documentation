@@ -6,6 +6,11 @@ Feature: Időjárás megjelenítése
   Szeretném, ha a bejelentkező, fő, ruhadarabjaim, outfitjeim és outfit összeállítás oldalon megjelennének az aktuális időjárási adatok,
   hogy mindig az alkalomhoz illően öltözhessek fel.
 
+  Scenario: Aktuális időjárás megjelenítése a bejelentkezési oldalon
+    Given a felhasználó megnyitja a bejelentkezési oldalt
+    When az alkalmazás lekéri az aktuális időjárási adatokat az API-ból
+    Then megjeleníti a hőmérsékletet, időjárási ikont és várost a bejelentkezési felületen
+
   Scenario: Aktuális időjárás megjelenítése az alkalmazás főoldalán
     Given a felhasználó megnyitja az alkalmazást
     When az alkalmazás lekéri az aktuális időjárási adatokat az API-ból
