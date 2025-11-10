@@ -57,7 +57,7 @@ mellett feladata biztosítani a vizuális élményt.
 - **Összeállítások Kezelés (CRUD műveletek)**
     - Összeállítás létrehozása és Mentése: feltöltött elemek közötti variáció (típus szerinti gyűjteményekből) és mentés
       címkék *(pl.: cím, évszak)* megadásának lehetőségével
-    - Szett Módosítása/Törlése
+    - Szett Törlése
     - Viselés Követése: manuálisan kezelhető elem a számlálásához.
 - **Galéria *(Gardrób)* Megjelenítés**
     - Ruhadarab nézet: egy oldal az összes feltöltött ruhadarabnak.
@@ -117,7 +117,7 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 - **Új ruhadarab feltöltése**: Az "**Új**" lenyíló menüben választható opció. Ezen a felületen a felhasználó új ruhadarabokat tölthet fel, megadva a következő adatokat: *kép URL, típus, szín, évszak, márka (opcionális), anyag (opcionális)*.
 - **Új outfit létrehozása**: Az "**Új**" lenyíló menüben választható opció. Ezen a felületen új outfiteket tud létrehozni a felhasználó, a korábban feltöltött ruhadarabokból. Nevet adhat az outfiteknek, illetve évszakot rendelhet hozzá.
 - **Ruhadarabok megjelenítése**: A "**Gardróbom**" lenyíló menüben választható opció. Ezen a felületen megjelenik az összes ruhadarab címkékkel ellátva. Lehetőség van **szűrésre** *(típus, szín és évszak alapján)*, **módosításra** és **törlésre**.
-- **Outfitek megjelenítése**: A "**Gardróbom**" lenyíló menüben választható opció. Ezen a felületen megjelenik az összes outfit címkékkel ellátva. Lehetőség van **szűrésre** *(évszak alapján)*, **módosításra** és **törlésre**.
+- **Outfitek megjelenítése**: A "**Gardróbom**" lenyíló menüben választható opció. Ezen a felületen megjelenik az összes outfit címkékkel ellátva. Lehetőség van **szűrésre** *(évszak alapján)* és **törlésre**.
 - **Kijelentkezés**: A **profil ikonon** keresztül, visszairányít a bejelentkezési felületre.
 
 ## 8. Követelménylista
@@ -135,12 +135,11 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 | Feladattípus | K9  | Ruhadarab módosítása        | 1.0 | A felhasználó szerkesztheti a már feltöltött ruhadarabok adatait.                                                                                                             |
 | Feladattípus | K10 | Ruhadarab törlése           | 1.0 | A felhasználó törölheti az általa feltöltött ruhadarabokat.                                                                                                                   |
 | Feladattípus | K11 | Outfit összeállítás         | 1.0 | A felhasználó korábban feltöltött ruhadarabokból összeállíthat új outfiteket.                                                                                                 |
-| Feladattípus | K12 | Outfit módosítása           | 1.0 | A felhasználó szerkesztheti a már létrehozott outfiteket.                                                                                                                     |
-| Feladattípus | K13 | Outfit törlése              | 1.0 | A felhasználó törölheti a már létrehozott outfiteket.                                                                                                                         |
-| Feladattípus | K14 | Ruhadarab szűrés            | 1.0 | A felhasználó különböző feltételek (évszak, típus, szín) alapján tudja szűrni a ruhadarabokat.                                                                                |
-| Feladattípus | K15 | Outfit szűrés               | 1.0 | A felhasználó évszak alapján tudja szűrni az outfiteket.                                                                                                                      |
-| Adatkezelés  | K16 | Adatok tárolása             | 1.0 | A rendszer kezeli és tárolja a felhasználók, ruhadarabok és outfitek adatait.                                                                                                 |
-| Adatkezelés  | K17 | Időjárás megjelenítése      | 1.0 | A rendszer az összes oldalon megjeleníti az aktuális időjárást, hogy segítse a felhasználót az outfitválasztásban.                                                            |
+| Feladattípus | K12 | Outfit törlése              | 1.0 | A felhasználó törölheti a már létrehozott outfiteket.                                                                                                                         |
+| Feladattípus | K13 | Ruhadarab szűrés            | 1.0 | A felhasználó különböző feltételek (évszak, típus, szín) alapján tudja szűrni a ruhadarabokat.                                                                                |
+| Feladattípus | K14 | Outfit szűrés               | 1.0 | A felhasználó évszak alapján tudja szűrni az outfiteket.                                                                                                                      |
+| Adatkezelés  | K15 | Adatok tárolása             | 1.0 | A rendszer kezeli és tárolja a felhasználók, ruhadarabok és outfitek adatait.                                                                                                 |
+| Adatkezelés  | K16 | Időjárás megjelenítése      | 1.0 | A rendszer az összes oldalon megjeleníti az aktuális időjárást, hogy segítse a felhasználót az outfitválasztásban.                                                            |
 
 ## 8.1 Rendszer áttekintés
 

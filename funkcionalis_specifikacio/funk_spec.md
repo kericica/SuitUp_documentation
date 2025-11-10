@@ -10,7 +10,7 @@ A felhasználók regisztráció után saját ruhatárat hozhatnak létre, ahol a
 
 A rendszer biztosítja:
 
-- új ruhadarabok és outfitek **feltöltését, módosítását és törlését**,
+- új ruhadarabok **feltöltését, módosítását és törlését** és az outfitek **feltöltését törlését**,
 - a **legkedveltebb és aktuális évszakhoz illő ruhadarabok** megjelenítését a főoldalon,
 - **szűrési lehetőséget** a ruhadarabok és outfitek között,
 - valamint az **aktuális időjárás megjelenítését** egy külső API segítségével.
@@ -131,10 +131,9 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 | Feladattípus | K11 | Ruhadarab módosítása        | 1.0 | A felhasználó módosíthatja a ruhadarabok adatait.                                                                                                                                            |
 | Feladattípus | K12 | Ruhadarab törlése           | 1.0 | A felhasználó törölheti az általa feltöltött ruhadarabokat.                                                                                                                                  |
 | Feladattípus | K13 | Outfit összeállítás         | 1.0 | A felhasználó korábban feltöltött ruhadarabokból új outfitet készíthet, valamint megadhatja az outfit nevét, illetve évszakját.                                                              |
-| Feladattípus | K14 | Outfit módosítása           | 1.0 | A felhasználó módosíthatja az általa létrehozott outfiteket.                                                                                                                                 |
-| Feladattípus | K15 | Outfit törlése              | 1.0 | A felhasználó törölheti az általa létrehozott outfiteket.                                                                                                                                    |
-| Adatkezelés  | K16 | Tárolás                     | 1.0 | A rendszer az adatokat PostgreSQL adatbázisban fogja eltárolni.                                                                                                                              |
-| Adatkezelés  | K17 | Időjárás adat lekérése      | 1.0 | A rendszer külső API segítségével lekéri az aktuális időjárást és megjeleníti az összes oldalon.                                                                                             |
+| Feladattípus | K14 | Outfit törlése              | 1.0 | A felhasználó törölheti az általa létrehozott outfiteket.                                                                                                                                    |
+| Adatkezelés  | K15 | Tárolás                     | 1.0 | A rendszer az adatokat PostgreSQL adatbázisban fogja eltárolni.                                                                                                                              |
+| Adatkezelés  | K16 | Időjárás adat lekérése      | 1.0 | A rendszer külső API segítségével lekéri az aktuális időjárást és megjeleníti az összes oldalon.                                                                                             |
 
 ## 8. Képernyőtervek
 
@@ -172,7 +171,7 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 
 Ekkor talált rá a **SuitUp** webalkalmazásra – egy digitális gardróbra, ahol végre rendszerezhette ruháit. Feltöltötte kedvenc darabjait, megjelölte, melyik illik a tavaszi vagy őszi időszakhoz, és még outfiteket is összeállíthatott belőlük.
 
-Most, amikor bejelentkezik a SuitUpba, a főoldalon azonnal látja az aktuális időjárást, és az alkalmazás ajánl neki néhány tökéletes ruhadarabot az aktuális évszakra. Ha valamelyik outfitje már nem tetszik, egyszerűen átszerkeszti – a SuitUp mindig alkalmazkodik az ízléséhez.
+Most, amikor bejelentkezik a SuitUpba, a főoldalon azonnal látja az aktuális időjárást, és az alkalmazás ajánl neki néhány tökéletes ruhadarabot az aktuális évszakra. Ha valamelyik outfitje már nem tetszik, egyszerűen törölheti – a SuitUp mindig alkalmazkodik az ízléséhez.
 
 A SuitUp segítségével Stella nemcsak időt spórol, hanem újra felfedezte a saját ruhatárát. 
 

@@ -9,7 +9,7 @@ kezelhetik.
 
 A rendszer biztosítja:
 
-- új ruhadarabok és outfitek **feltöltését, módosítását és törlését**,
+- új ruhadarabok **feltöltését, módosítását és törlését** és az outfitek **feltöltését törlését**,,
 - a **legkedveltebb és aktuális évszakhoz illő ruhadarabok** megjelenítését a főoldalon,
 - **szűrési lehetőséget** a ruhadarabok és outfitek között,
 - valamint az **aktuális időjárás megjelenítését** egy külső API segítségével.
@@ -88,7 +88,7 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 #### Outfitek kezelése
 
 * **Új outfit létrehozása:** a felhasználó a feltöltött ruhadarabokból állíthat össze szetteket, amelyekhez nevet és évszakot rendelhet.
-* **Módosítása és törlése:** a rendszer támogatja a korábban mentett kombinációk szerkesztését és eltávolítását.
+* **Törlése:** a rendszer támogatja a korábban mentett kombinációk eltávolítását.
 * **Szűrés:** a rendszer lehetővé teszi az outfitek listázásának szűrését évszak alapján.
 * **Megjelenítés:** a felhasználó megtekintheti az összes mentett outfitet címkékkel és előnézeti képekkel.
 
@@ -133,7 +133,7 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 - **Összeállítások Kezelés (CRUD műveletek)**
     - Összeállítás létrehozása és Mentése: feltöltött elemek közötti variáció (típus szerinti gyűjteményekből) és mentés
       címkék *(pl.: cím, évszak)* megadásának lehetőségével
-    - Szett Módosítása/Törlése
+    - Szett Törlése
     - Viselés Követése: manuálisan kezelhető elem a számlálásához.
 - **Galéria *(Gardrób)* Megjelenítés**
     - Ruhadarab nézet: egy oldal az összes feltöltött ruhadarabnak.
@@ -191,9 +191,6 @@ ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és sta
 #### Új outfit létrehozása
 * *Lefutás:* Navigációs sáv → "Új" → "Outfit létrehozása" → korábban feltöltött ruhadarabok kiválasztása → az outfit nevének és évszakának megadása → "Mentés" → outfit megjelenik az Outfitek oldalon.
 
-#### Outfit módosítása
-* *Lefutás:* "Gardróbom" → "Outfitek" oldal → kiválasztott outfit alatti "Módosítás" gomb → ruhadarabok vagy adatok módosítása → "Mentés" → frissített adatok megjelennek az oldalon.
-
 #### Outfit törlése
 * *Lefutás:* "Gardróbom" → "Outfitek" oldal → kiválasztott outfit alatti "Törlés" gomb → törlés megerősítése → outfit eltűnik a listából.
 
@@ -234,7 +231,7 @@ ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és sta
 #### Outfitek oldal
 * Outfitek listája (előnézeti képekkel, címkékkel)
 * Szűrés évszak alapján
-* "Módosítás" és "Törlés" gomb outfitenként
+* "Törlés" gomb outfitenként
 * Navigációs sáv: "Új", "Gardróbom", profil ikon
 
 #### Új ruhadarab feltöltése oldal
@@ -399,21 +396,20 @@ A tesztelés további céljai:
 
 ### 11.3 Tesztesetek
 
-| ID | Tesztcím | Leírás | Lépések                                                                  | Elvárt eredmény | Teszttípus |
-|----|-----------|--------|--------------------------------------------------------------------------|------------------|-------------|
+| ID   | Tesztcím | Leírás | Lépések                                                                  | Elvárt eredmény | Teszttípus |
+|------|-----------|--------|--------------------------------------------------------------------------|------------------|-------------|
 | T-01 | Regisztráció működése | Új felhasználó regisztrálása érvényes adatokkal | 1. Megnyitás → 2. Adatok kitöltése → 3. Regisztráció gomb                | Felhasználó adatai elmentődnek, bejelentkezés oldalra irányítás | Funkcionális |
 | T-02 | Hibás regisztráció | Hiányos vagy érvénytelen adatok beküldése | 1. Üres mezők → 2. Küldés                                                | Hibaüzenet jelenik meg, adat nem mentődik | Funkcionális |
 | T-03 | Bejelentkezés | Regisztrált felhasználóval belépés | 1. Adatok megadása → 2. Login                                            | Főoldal megjelenik, profilikon látható | Funkcionális |
 | T-04 | Kijelentkezés | Aktív felhasználó kijelentkezése | 1. Menü → 2. Logout                                                      | Login oldalra navigálás, munkamenet lezárva | Funkcionális |
 | T-05 | Új ruhadarab feltöltése | Kép és adatok feltöltése | 1. Új ruhadarab feltöltése oldal → 2. Fájl + mezők kitöltése → 3. Mentés | Új elem megjelenik a listában | Funkcionális |
-| T-06 | Ruhadarab módosítása | Feltöltött elem adatainak frissítése | 1. Módosítás gomb → 2. Mezők változtatása → 3. Mentés                    | Elem adatai frissülnek | Funkcionális |
-| T-07 | Ruhadarab törlése | Feltöltött elem eltávolítása | 1. Törlés gomb → 2. Jóváhagyás                                           | Elem törlődik, lista frissül | Funkcionális |
-| T-08 | Outfit összeállítás | Ruhadarabokból szett létrehozása | 1. Új outfit készítése oldal → 2. Elemvariálás → 3. Mentés               | Új outfit megjelenik a galériában | Funkcionális |
-| T-09 | Időjárás API működés | Külső API-ból adatlekérés | 1. Főoldal betöltése                                                     | Aktuális időjárási adatok megjelennek | Integrációs |
-| T-10 | Statisztika generálása | Viselési gyakoriság kijelzése | 1. Főoldal betöltése                                                     | Megfelelő aggregált adatok jelennek meg | Funkcionális |
-| T-11 | Teljesítményteszt | Oldalbetöltés mérése | 1. Oldal megnyitása különböző eszközökön                                 | Betöltési idő ≤ 3 másodperc | Nemfunkcionális |
-| T-12 | Böngésző kompatibilitás | Különböző böngészőkben való működés | 1. Chrome, Firefox, Edge, Opera megnyitása                               | Azonos megjelenés és működés | Kompatibilitási |
-| T-13 | Adatperzisztencia | CRUD műveletek után adatok mentése az adatbázisba | 1. Új elem létrehozása → újraindítás után ellenőrzés                     | Adat megmarad az adatbázisban | Integrációs |
+| T-06 | Ruhadarab törlése | Feltöltött elem eltávolítása | 1. Törlés gomb → 2. Jóváhagyás                                           | Elem törlődik, lista frissül | Funkcionális |
+| T-07 | Outfit összeállítás | Ruhadarabokból szett létrehozása | 1. Új outfit készítése oldal → 2. Elemvariálás → 3. Mentés               | Új outfit megjelenik a galériában | Funkcionális |
+| T-08 | Időjárás API működés | Külső API-ból adatlekérés | 1. Főoldal betöltése                                                     | Aktuális időjárási adatok megjelennek | Integrációs |
+| T-09 | Statisztika generálása | Viselési gyakoriság kijelzése | 1. Főoldal betöltése                                                     | Megfelelő aggregált adatok jelennek meg | Funkcionális |
+| T-10 | Teljesítményteszt | Oldalbetöltés mérése | 1. Oldal megnyitása különböző eszközökön                                 | Betöltési idő ≤ 3 másodperc | Nemfunkcionális |
+| T-11 | Böngésző kompatibilitás | Különböző böngészőkben való működés | 1. Chrome, Firefox, Edge, Opera megnyitása                               | Azonos megjelenés és működés | Kompatibilitási |
+| T-12 | Adatperzisztencia | CRUD műveletek után adatok mentése az adatbázisba | 1. Új elem létrehozása → újraindítás után ellenőrzés                     | Adat megmarad az adatbázisban | Integrációs |
 
 
 ## 12. Telepítési / Indítási terv
