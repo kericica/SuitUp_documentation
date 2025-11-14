@@ -412,7 +412,32 @@ A tesztelés további céljai:
 | T-12 | Adatperzisztencia | CRUD műveletek után adatok mentése az adatbázisba | 1. Új elem létrehozása → újraindítás után ellenőrzés                     | Adat megmarad az adatbázisban | Integrációs |
 
 
-## 12. Telepítési / Indítási terv
+## 12. Indítási terv (fejlesztői környezetben)
+
+1. **Repository klónozása GitHub-ról:**
+   ```bash
+   git clone https://github.com/timi15/SuitUp.git
+   cd suitup
+   ```
+
+2. **Adatbázis beállítása:**
+    - Hozz létre egy PostgreSQL adatbázist (pl. `suitup_db`)
+    - Frissítsd az `application.properties` fájlban a kapcsolati adatokat.
+
+
+3. **Backend indítása:**
+   ```bash
+   mvn spring-boot:run
+   ```
+
+4. **Tesztek futtatása:**
+   ```bash
+   mvn clean test
+   ```
+
+4. **Alkalmazás elérése:**  
+   Nyisd meg a böngészőben: [http://localhost:8080](http://localhost:8080)
+
 
 ## 13. Karbantartási terv
 
