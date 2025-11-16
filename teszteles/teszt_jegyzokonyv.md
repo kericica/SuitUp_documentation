@@ -6,19 +6,19 @@
 
 | ID    | Név                | Leírás                                                                                                 | Megfelelés | QA                                                     |
 |-------|--------------------|--------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------|
-| GF-01 | Navigáció működése | Az alkalmazás menüpontjai közötti navigáció helyesen működik, minden link a megfelelő oldalra irányít. | OK         |                                                        |
-| GF-02 | Jogosultságkezelés | Be nem jelentkezett felhasználó nem érheti el az auth. oldalak mögötti funkciókat.                     | OK         |                                                        |
-| GF-03 | Hibakezelés        | Hibás URL megadása esetén a rendszer visszairányít a főoldalra vagy hibát jelez.                       | OK         |                                                        |
+| GF-01 | Navigáció működése | Az alkalmazás menüpontjai közötti navigáció helyesen működik, minden link a megfelelő oldalra irányít. | OK         | [Varga Tímea](https://github.com/timi15)               |
+| GF-02 | Jogosultságkezelés | Be nem jelentkezett felhasználó nem érheti el az auth. oldalak mögötti funkciókat.                     | OK         | [Varga Tímea](https://github.com/timi15)               |
+| GF-03 | Hibakezelés        | Hibás URL megadása esetén a rendszer visszairányít a főoldalra vagy hibát jelez.                       | OK         | [Varga Tímea](https://github.com/timi15)               |
 | GF-04 | Responsive design  | Mobil- és tablet-nézetben is jó az oldalak elrendezése.                                                | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) | 	
 
 ### Regisztrációs / Bejelentkező felület
 
-| ID    | Név                            | Leírás                                                       | Megfelelés | QA                                       |
-|-------|--------------------------------|--------------------------------------------------------------|------------|------------------------------------------|
-| LI-01 | Regisztráció valid adatokkal   | A felhasználó sikeresen regisztrál érvényes adatokkal.       | OK         | [Varga Tímea](https://github.com/timi15) |
-| LI-02 | Regisztráció hiányos adatokkal | A rendszer hibát jelez, és nem hoz létre új felhasználót.    | OK         |                                          |
-| LI-03 | Bejelentkezés helyes adatokkal | A felhasználó sikeresen bejelentkezik, a kezdőoldalra kerül. | OK         | [Varga Tímea](https://github.com/timi15) |
-| LI-04 | Bejelentkezés hibás jelszóval  | A rendszer hibaüzenetet jelenít meg.                         | OK         |                                          |
+| ID    | Név                            | Leírás                                                       | Megfelelés | QA                                                     |
+|-------|--------------------------------|--------------------------------------------------------------|------------|--------------------------------------------------------|
+| LI-01 | Regisztráció valid adatokkal   | A felhasználó sikeresen regisztrál érvényes adatokkal.       | OK         | [Varga Tímea](https://github.com/timi15)               |
+| LI-02 | Regisztráció hiányos adatokkal | A rendszer hibát jelez, és nem hoz létre új felhasználót.    | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
+| LI-03 | Bejelentkezés helyes adatokkal | A felhasználó sikeresen bejelentkezik, a kezdőoldalra kerül. | OK         | [Varga Tímea](https://github.com/timi15)               |
+| LI-04 | Bejelentkezés hibás jelszóval  | A rendszer hibaüzenetet jelenít meg.                         | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
 
 ### Landing page felület
 
@@ -27,7 +27,7 @@
 | LP-01 | Időjárás widget megjelenése                 | A főoldalon megjelenik az Open-Meteo alapú időjárás widget.                                                                                           | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | LP-02 | Widget frissülése                           | A hőmérséklet automatikusan frissül az időzített kérés alapján.                                                                                       | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | LP-03 | Évszakhoz illő ajánlások                    | A widget megjeleníti az aktuális évszakhoz tartozó ruhadarabokat.                                                                                     | OK         | [Kántor Kamilla](https://github.com/kericica)          |
-| LP-04 | Kedvelt ruhadarabok megjelenítése           | Az oldalon megjelennek a leggyakrabban viselt ruhadarabokat                                                                                           | OK         |                                                        |
+| LP-04 | Kedvelt ruhadarabok megjelenítése           | Az oldalon megjelennek a leggyakrabban viselt ruhadarabokat                                                                                           | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
 | LP-05 | Átirányítás az outfit összeállító felületre | A carousel-ben megjelenő képre kattintva a felhasználó átkerül az outfit összeállító oldalra, ahol az adott ruhadarab automatikusan betöltésre kerül. | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
 
 ### Ruhadarab feltöltő felület
@@ -35,8 +35,8 @@
 | ID     | Név                        | Leírás                                                                                                | Megfelelés | QA                                                     |
 |--------|----------------------------|-------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------|
 | CLF-01 | Új ruhadarab feltöltése    | Új ruhadarab hozzáadása link, típus, évszak, szín, márka és anyag megadásával.                        | OK         | [Varga Tímea](https://github.com/timi15)               |
-| CLF-02 | Hibás adatbevitel kezelése | Kötelező mező hiányában a rendszer validációs hibát jelez.                                            | OK         |                                                        |
-| CLF-03 | Képmegjelenítés            | A ruhadarabról megadott link az adatbázisban tárolódik, és megjelenik a felületen.                    | OK         |                                                        |
+| CLF-02 | Hibás adatbevitel kezelése | Kötelező mező hiányában a rendszer validációs hibát jelez.                                            | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
+| CLF-03 | Képmegjelenítés            | A ruhadarabról megadott link az adatbázisban tárolódik, és megjelenik a felületen.                    | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | CLF-04 | Egyedi címke megadása      | A felhasználó egyedi címkéket adhat hozzá az egyes ruhadarabokhoz, ezek eltárolódnak az adatbázisban. | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
 
 ### Outfit összeállító felület
@@ -52,7 +52,7 @@
 
 | ID    | Név                                         | Leírás                                                                                                                                | Megfelelés | QA                                                     |
 |-------|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------|
-| CL-01 | Ruhadarab lista megjelenítése               | A felhasználó saját ruhadarabjai listában megjelennek.                                                                                | OK         |                                                        |
+| CL-01 | Ruhadarab lista megjelenítése               | A felhasználó saját ruhadarabjai listában megjelennek.                                                                                | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | CL-02 | Ruhadarab módosítása                        | A kiválasztott ruhadarab adatai szerkeszthetők.                                                                                       | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | CL-03 | Ruhadarab törlése                           | Ruhadarab törlése után a lista frissül, a bejegyzés eltűnik.                                                                          | OK         | [Varga Tímea](https://github.com/timi15)               |
 | CL-04 | Címkék megjelenítése                        | Minden ruhadarabhoz a megfelelő címkék jelennek meg.                                                                                  | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
@@ -63,7 +63,7 @@
 
 | ID    | Név                                   | Leírás                                                                                                      | Megfelelés | QA                                                     |
 |-------|---------------------------------------|-------------------------------------------------------------------------------------------------------------|------------|--------------------------------------------------------|
-| OF-01 | Összes outfit megjelenítése           | A felhasználó korábban mentett outfitjei listázódnak.                                                       | OK         |                                                        |
+| OF-01 | Összes outfit megjelenítése           | A felhasználó korábban mentett outfitjei listázódnak.                                                       | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | OF-02 | Outfit törlése                        | Egy outfit eltávolítható az adatbázisból.                                                                   | OK         | [Kántor Kamilla](https://github.com/kericica)          |
 | OF-03 | Outfitek szűrése                      | Az outfiteket lehet szűrni évszak, név, és az egyedi címkék alapján.                                        | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
 | OF-04 | Címkék megjelenítése                  | Minden outfithez a megfelelő címkék jelennek meg.                                                           | OK         | [Szőllős Boglárka](https://github.com/SzollosBoglarka) |
