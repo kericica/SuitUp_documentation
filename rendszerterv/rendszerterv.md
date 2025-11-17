@@ -41,22 +41,24 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 | Funkció / Story               | Feladat / Task                                                                                                              | Prioritás | Becsült szükséges idő (óra) | Ráfordított idő (óra) |
 |-------------------------------|-----------------------------------------------------------------------------------------------------------------------------|-----------|-----------------------------|-----------------------|
-| Követelmény specifikáció      | Követelmények összegyűjtése                                                                                                 | 1         | 6                           | -                     |
-| Funkcionális specifikáció     | Funkciók meghatározása, use-case-ek meghatározása , user story-k kidolgozása                                                | 1         | 6                           | -                     |
-| Rendszerterv                  | Adatbázisterv, architektúrális modell, menü-hierarchia, képernyőtervek készítése, technológiák kiválasztása                 | 1         | 6                           | -                     |
-| Szerveroldal létrehozása      | Adatbáziskapcsolat megvalósítása, regisztárció/bejelentkezés, CRUD műveletek implementálása                                 | 2         | 24                          | -                     |
-| Kinézet létrehozása           | Szerveroldali megjelenítés kialakítása sablonok segítségével, reszponzív elrendezéssel és újrahasznosítható oldalelemekkel. | 2         | 18                          | -                     |
-| Tesztek megírása és futtatása | Funkcionális teszt, reszponzív teszt, hibajavítás                                                                           | 3         | 8                           | -                     |
+| Követelmény specifikáció      | Követelmények összegyűjtése                                                                                                 | 1         | 6                           | 6                     |
+| Funkcionális specifikáció     | Funkciók meghatározása, use-case-ek meghatározása , user story-k kidolgozása                                                | 1         | 6                           | 6                     |
+| Rendszerterv                  | Adatbázisterv, architektúrális modell, menü-hierarchia, képernyőtervek készítése, technológiák kiválasztása                 | 1         | 6                           | 6                     |
+| Szerveroldal létrehozása      | Adatbáziskapcsolat megvalósítása, regisztárció/bejelentkezés, CRUD műveletek implementálása                                 | 2         | 24                          | 24                    |
+| Kinézet létrehozása           | Szerveroldali megjelenítés kialakítása sablonok segítségével, reszponzív elrendezéssel és újrahasznosítható oldalelemekkel. | 2         | 18                          | 18                    |
+| Tesztek megírása és futtatása | Funkcionális teszt, reszponzív teszt, hibajavítás                                                                           | 3         | 8                           | 8                     |
 
 ## 3. Üzleti folyamatok modellje
 
 ### 3.1 Üzleti szereplők
 
 * **Felhasználó:**
-  A rendszer végfelhasználója, aki regisztrál, bejelentkezik, ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és statisztikákat.
+  A rendszer végfelhasználója, aki regisztrál, bejelentkezik, ruhadarabokat és outfiteket kezel, valamint megtekinti az
+  ajánlásokat és statisztikákat.
 
 * **Rendszer:**
-  A háttérben futó alkalmazás, amely kezeli a felhasználói műveleteket, tárolja és megjeleníti az adatokat, valamint kommunikál a külső időjárás-API-val.
+  A háttérben futó alkalmazás, amely kezeli a felhasználói műveleteket, tárolja és megjeleníti az adatokat, valamint
+  kommunikál a külső időjárás-API-val.
 
 * **Megrendelő:**
   A rendszer funkcionális és üzleti igényeit meghatározó fél, aki a fejlesztési követelményeket definiálja.
@@ -80,19 +82,21 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 #### Ruhadarabok kezelése
 
-* **Új ruhadarab létrehozása:** a felhasználó feltölti a ruhadarab képének URL-jét, emellett különböző jellemzőket rendelhet hozzá: típus, szín, évszak, anyag, márka.
+* **Új ruhadarab létrehozása:** a felhasználó feltölti a ruhadarab képének URL-jét, emellett különböző jellemzőket
+  rendelhet hozzá: típus, szín, évszak, anyag, márka.
 * **Módosítás és törlés:** a felhasználó szerkesztheti vagy eltávolíthatja a már feltöltött ruhadarabokat.
 * **Szűrés:** a rendszer lehetővé teszi a ruhadarabok listázásának szűrését típus, szín és évszak alapján.
 * **Megjelenítés:** a felhasználó megtekintheti az összes feltöltött ruhadarabot címkékkel és előnézeti képpel.
 
 #### Outfitek kezelése
 
-* **Új outfit létrehozása:** a felhasználó a feltöltött ruhadarabokból állíthat össze szetteket, amelyekhez nevet és évszakot rendelhet.
+* **Új outfit létrehozása:** a felhasználó a feltöltött ruhadarabokból állíthat össze szetteket, amelyekhez nevet és
+  évszakot rendelhet.
 * **Törlése:** a rendszer támogatja a korábban mentett kombinációk eltávolítását.
 * **Szűrés:** a rendszer lehetővé teszi az outfitek listázásának szűrését évszak alapján.
 * **Megjelenítés:** a felhasználó megtekintheti az összes mentett outfitet címkékkel és előnézeti képekkel.
 
-#### Integrációk 
+#### Integrációk
 
 * **Időjárás-integráció:** a rendszer külső API segítségével megjeleníti az aktuális időjárást.
 
@@ -105,15 +109,15 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 * **Felhasználó:**
   A rendszer regisztrált használója.
-  *  *Attribútumai:* név, felhasználónév, jelszó.
+    * *Attribútumai:* név, felhasználónév, jelszó.
 
 * **Ruhadarab:**
   A rendszer egyik alapvető entitása.
-  * *Attribútumai:* id, kép-URL, típus, szín, évszak, márka, anyag.
+    * *Attribútumai:* id, kép-URL, típus, szín, évszak, márka, anyag.
 
 * **Outfit:**
   Ruhadarabok kombinációja, amelyet a felhasználó hoz létre.
-  * *Attribútumai:* id, cím, évszak, létrehozás dátuma, tartalmazott ruhadarabok.
+    * *Attribútumai:* id, cím, évszak, létrehozás dátuma, tartalmazott ruhadarabok.
 
 * **Időjárás-adat:**
   Külső API-ból származó információ, amely segíti a felhasználót a megfelelő ruhadarabok kiválasztásában.
@@ -150,15 +154,20 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 ### 4.2 Nemfunkcionális követelmények
 
 - **Teljesítmény**
-    - *Képbetöltési sebesség* - a feltöltött darabok képei a Galériában maximum 3 másodpercen belül be kell, hogy töltődjenek.
-    - *Keresés/Szűrés válaszidő* - minden adatbázis-lekérdezés (szűrés, rendezés) maximum 1 másodperc alatt kell, hogy eredményt adjon.
+    - *Képbetöltési sebesség* - a feltöltött darabok képei a Galériában maximum 3 másodpercen belül be kell, hogy
+      töltődjenek.
+    - *Keresés/Szűrés válaszidő* - minden adatbázis-lekérdezés (szűrés, rendezés) maximum 1 másodperc alatt kell, hogy
+      eredményt adjon.
 - **Felhasználhatóság**
-    - *Intuitív navigáció* - a fő funkciók (elemek feltöltés, szett összeállítás, Galéria) a Főoldalról maximum 3 kattintással elérhetők.
+    - *Intuitív navigáció* - a fő funkciók (elemek feltöltés, szett összeállítás, Galéria) a Főoldalról maximum 3
+      kattintással elérhetők.
 - **Megbízhatóság**
-    - *Adatperzisztencia* - az adatok *(ruhadarabok, összeállítások, felhasználói adatok)* PostgreSQL adatbázisban történő
+    - *Adatperzisztencia* - az adatok *(ruhadarabok, összeállítások, felhasználói adatok)* PostgreSQL adatbázisban
+      történő
       tartós tárolása biztosított legyen, elkerülve az adatvesztést.
 - **Fejleszthetőség**
-    - *Kódstruktúra* - a backend kódja a Spring Boot konvencióit követve rétegekre bontott (Controller, Service, Repository),
+    - *Kódstruktúra* - a backend kódja a Spring Boot konvencióit követve rétegekre bontott (Controller, Service,
+      Repository),
       elősegítve a jövőbeli karbantartást.
 
 ## 5. Funkcionális terv
@@ -171,38 +180,57 @@ ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és sta
 ### 5.2 Rendszerhasználati esetek és lefutásaik
 
 #### Regisztráció
-* *Lefutás:* Regisztrációs oldal → név, felhasználónév, jelszó megadása → "Regisztráció" gomb → sikeres regisztráció után automatikus átirányítás a Bejelentkezési oldalra.
+
+* *Lefutás:* Regisztrációs oldal → név, felhasználónév, jelszó megadása → "Regisztráció" gomb → sikeres regisztráció
+  után automatikus átirányítás a Bejelentkezési oldalra.
 
 #### Bejelentkezés
-* *Lefutás:* Bejelentkezési oldal → felhasználónév és jelszó megadása → "Bejelentkezés" gomb → sikeres hitelesítés után automatikus átirányítás a Főoldalra → aktuális időjárás, ajánlások és statisztikák megjelenítése.
+
+* *Lefutás:* Bejelentkezési oldal → felhasználónév és jelszó megadása → "Bejelentkezés" gomb → sikeres hitelesítés után
+  automatikus átirányítás a Főoldalra → aktuális időjárás, ajánlások és statisztikák megjelenítése.
 
 #### Új ruhadarab feltöltése
-* *Lefutás:* Navigációs sáv → "Új" → "Ruhadarab feltöltése" → űrlap kitöltése (kép URL, típus, szín, évszak, márka, anyag) → "Mentés" gomb → sikeres mentés után megjelenik a Ruhadarabok oldalon.
+
+* *Lefutás:* Navigációs sáv → "Új" → "Ruhadarab feltöltése" → űrlap kitöltése (kép URL, típus, szín, évszak, márka,
+  anyag) → "Mentés" gomb → sikeres mentés után megjelenik a Ruhadarabok oldalon.
 
 #### Ruhadarab módosítása
-* *Lefutás:* "Gardróbom" → "Ruhadarabok" oldal → kiválasztott ruhadarab alatti "Módosítás" gomb → mezők szerkesztése → "Mentés" → frissített adatok megjelennek az oldalon.
+
+* *Lefutás:* "Gardróbom" → "Ruhadarabok" oldal → kiválasztott ruhadarab alatti "Módosítás" gomb → mezők szerkesztése → "
+  Mentés" → frissített adatok megjelennek az oldalon.
 
 #### Ruhadarab törlése
-* *Lefutás:* "Gardróbom" → "Ruhadarabok" oldal → kiválasztott ruhadarab alatti "Törlés" gomb → törlés megerősítése → ruhadarab eltűnik a listából.
+
+* *Lefutás:* "Gardróbom" → "Ruhadarabok" oldal → kiválasztott ruhadarab alatti "Törlés" gomb → törlés megerősítése →
+  ruhadarab eltűnik a listából.
 
 #### Ruhadarabok szűrése
-* *Lefutás:* Ruhadarabok oldal → szűrési feltételek megadása (típus, szín, évszak) → a lista frissül a szűrési feltételek alapján.
+
+* *Lefutás:* Ruhadarabok oldal → szűrési feltételek megadása (típus, szín, évszak) → a lista frissül a szűrési
+  feltételek alapján.
 
 #### Új outfit létrehozása
-* *Lefutás:* Navigációs sáv → "Új" → "Outfit létrehozása" → korábban feltöltött ruhadarabok kiválasztása → az outfit nevének és évszakának megadása → "Mentés" → outfit megjelenik az Outfitek oldalon.
+
+* *Lefutás:* Navigációs sáv → "Új" → "Outfit létrehozása" → korábban feltöltött ruhadarabok kiválasztása → az outfit
+  nevének és évszakának megadása → "Mentés" → outfit megjelenik az Outfitek oldalon.
 
 #### Outfit törlése
-* *Lefutás:* "Gardróbom" → "Outfitek" oldal → kiválasztott outfit alatti "Törlés" gomb → törlés megerősítése → outfit eltűnik a listából.
+
+* *Lefutás:* "Gardróbom" → "Outfitek" oldal → kiválasztott outfit alatti "Törlés" gomb → törlés megerősítése → outfit
+  eltűnik a listából.
 
 #### Outfitek szűrése
+
 * *Lefutás:* Outfitek oldal → évszak kiválasztása → a lista frissül a megadott szűrési feltételek alapján.
 
 #### Kijelentkezés
+
 * *Lefutás:* Profil ikon → lenyíló menü → "Kijelentkezés" → visszairányítás a Bejelentkezési oldalra.
 
 ### 5.3 Határosztályok
 
 #### Bejelentkezési oldal
+
 * Üdvözlő üzenet
 * Aktuális időjárás megjelenítése
 * Felhasználónév input mező
@@ -211,36 +239,42 @@ ruhadarabokat és outfiteket kezel, valamint megtekinti az ajánlásokat és sta
 * "Regisztráció" gomb (link a Regisztrációs oldalra)
 
 #### Regisztrációs oldal
+
 * Név input mező
-* Felhasználónév input mező 
+* Felhasználónév input mező
 * Jelszó input mező
 * "Regisztráció" gomb (link a Bejelentkezési oldalra)
 
 #### Főoldal
+
 * Aktuális időjárás megjelenítése
 * Évszaknak megfelelő ruhadarab ajánlás
 * Statisztikák blokk (leggyakrabban viselt ruhadarabok)
 * Navigációs sáv: "Új", "Gardróbom", profil ikon
 
 #### Ruhadarabok oldal
+
 * Ruhadarabok listája (kártyás elrendezésben, címkékkel)
 * Szűrőmezők: típus, szín, évszak
 * "Módosítás" és "Törlés" gomb ruhadarabonként
 * Navigációs sáv: "Új", "Gardróbom", profil ikon
 
 #### Outfitek oldal
+
 * Outfitek listája (előnézeti képekkel, címkékkel)
 * Szűrés évszak alapján
 * "Törlés" gomb outfitenként
 * Navigációs sáv: "Új", "Gardróbom", profil ikon
 
 #### Új ruhadarab feltöltése oldal
+
 * Kép URL input mező
 * Típus, szín, évszak, márka, anyag input mezők
 * "Mentés" gomb
 * Navigációs sáv: "Új", "Gardróbom", profil ikon
 
 #### Új outfit létrehozása oldal
+
 * Ruhadarabok listája (carousel-ben)
 * Outfit név input mező
 * Évszak input mező
@@ -345,42 +379,45 @@ feldolgozása során:
 A fejlesztés a 6. fejezetben ismertetett technológiákra épül. A rendszer **Spring Boot** alapú backend architektúrát és
 **Thymeleaf** sablonrendszert használ a dinamikus HTML-oldalak kiszolgálásához.
 
-Az implementáció során a **rétegezett architektúra** elvét alkalmazzuk: minden réteg egyértelműen elkülönített felelősségi
+Az implementáció során a **rétegezett architektúra** elvét alkalmazzuk: minden réteg egyértelműen elkülönített
+felelősségi
 körrel rendelkezik, elősegítve a kód karbantarthatóságát és újrafelhasználhatóságát.
 
-| Réteg | Feladat | Technológia / Fő elemek                       |
-|-------|----------|-----------------------------------------------|
-| **Controller** | HTTP-kérések kezelése, routing és view-model adatok előkészítése | Spring Boot MVC Controller osztályok          |
-| **Service** | Üzleti logika, adatok validálása és feldolgozása | Spring Boot @Service sztereotípia             |
-| **Repository** | Adatbázis-kezelés, CRUD műveletek | Spring Boot Data JPA, PostgreSQL              |
-| **View (Frontend)** | Adatok megjelenítése, felhasználói interakció | Thymeleaf, HTML5, CSS3, Bootstrap, JavaScript |
-| **Security** | Hitelesítés, jogosultságkezelés | Spring Boot Security                          |
+| Réteg               | Feladat                                                          | Technológia / Fő elemek                       |
+|---------------------|------------------------------------------------------------------|-----------------------------------------------|
+| **Controller**      | HTTP-kérések kezelése, routing és view-model adatok előkészítése | Spring Boot MVC Controller osztályok          |
+| **Service**         | Üzleti logika, adatok validálása és feldolgozása                 | Spring Boot @Service sztereotípia             |
+| **Repository**      | Adatbázis-kezelés, CRUD műveletek                                | Spring Boot Data JPA, PostgreSQL              |
+| **View (Frontend)** | Adatok megjelenítése, felhasználói interakció                    | Thymeleaf, HTML5, CSS3, Bootstrap, JavaScript |
+| **Security**        | Hitelesítés, jogosultságkezelés                                  | Spring Boot Security                          |
 
 ### 10.2 Fejlesztési fázisok és ütemezés
 
 A megvalósítás iteratív, sprint alapú folyamatban történik. Minden sprint végén működőképes, részrendszert eredményező
 build készül.
 
-| Fázis | Tevékenység                                                                      | Felelős | Output |
-|-------|----------------------------------------------------------------------------------|----------|---------|
-| **1. Projekt inicializálása** | Repository létrehozása, alapstruktúra felépítése                                 | PM, PA | Alap Spring Boot projekt |
-| **2. Adatmodell implementálása** | Entitások (User, WardrobeItem, Outfit) és relációk kialakítása, Flyway migrációk | PA | Adatbázis-táblák |
-| **3. Hitelesítés és jogosultságkezelés** | Spring Boot Security konfigurálása, login/registration logika                    | PA | Regisztrációs és bejelentkezési modul |
-| **4. CRUD funkciók implementálása** | Ruhadarabok és outfitek kezelése (Controller + Service + Repository)             | PA | Működő CRUD modul |
-| **5. Frontend integráció** | Thymeleaf nézetek fejlesztése, Bootstrap integráció                              | UI/UX Designer | Reszponzív nézetek |
-| **6. API integráció** | Időjárás adatlekérése az Open-Meteo API segítségével                             | PA | Működő időjárás-modul |
-| **7. Tesztelés és hibajavítás** | Egység-, integrációs és funkcionális tesztek                                     | QA | Tesztjelentés, stabil verzió |
-| **8. Dokumentáció és átadás** | Rendszerterv, specifikáció, telepítési útmutató frissítése                       | PM | Végleges dokumentáció |
+| Fázis                                    | Tevékenység                                                                      | Felelős        | Output                                |
+|------------------------------------------|----------------------------------------------------------------------------------|----------------|---------------------------------------|
+| **1. Projekt inicializálása**            | Repository létrehozása, alapstruktúra felépítése                                 | PM, PA         | Alap Spring Boot projekt              |
+| **2. Adatmodell implementálása**         | Entitások (User, WardrobeItem, Outfit) és relációk kialakítása, Flyway migrációk | PA             | Adatbázis-táblák                      |
+| **3. Hitelesítés és jogosultságkezelés** | Spring Boot Security konfigurálása, login/registration logika                    | PA             | Regisztrációs és bejelentkezési modul |
+| **4. CRUD funkciók implementálása**      | Ruhadarabok és outfitek kezelése (Controller + Service + Repository)             | PA             | Működő CRUD modul                     |
+| **5. Frontend integráció**               | Thymeleaf nézetek fejlesztése, Bootstrap integráció                              | UI/UX Designer | Reszponzív nézetek                    |
+| **6. API integráció**                    | Időjárás adatlekérése az Open-Meteo API segítségével                             | PA             | Működő időjárás-modul                 |
+| **7. Tesztelés és hibajavítás**          | Egység-, integrációs és funkcionális tesztek                                     | QA             | Tesztjelentés, stabil verzió          |
+| **8. Dokumentáció és átadás**            | Rendszerterv, specifikáció, telepítési útmutató frissítése                       | PM             | Végleges dokumentáció                 |
 
 ## 11. Tesztterv
 
 ### 11.1 Tesztelés célja
 
-A tesztelés célja annak biztosítása, hogy a rendszer minden funkciója a specifikációnak megfelelően működjön, megfeleljen
+A tesztelés célja annak biztosítása, hogy a rendszer minden funkciója a specifikációnak megfelelően működjön,
+megfeleljen
 a funkcionális és nemfunkcionális követelményeknek, valamint stabil, biztonságos és felhasználóbarát módon támogassa a
 végfelhasználói folyamatokat.
 
 A tesztelés további céljai:
+
 - A fejlesztés során bevezetett hibák azonosítása és javítása a kiadás előtt.
 - A komponensek és modulok helyes együttműködésének ellenőrzése.
 - A rendszer teljesítményének, biztonságának és használhatóságának validálása.
@@ -396,21 +433,20 @@ A tesztelés további céljai:
 
 ### 11.3 Tesztesetek
 
-| ID   | Tesztcím | Leírás | Lépések                                                                  | Elvárt eredmény | Teszttípus |
-|------|-----------|--------|--------------------------------------------------------------------------|------------------|-------------|
-| T-01 | Regisztráció működése | Új felhasználó regisztrálása érvényes adatokkal | 1. Megnyitás → 2. Adatok kitöltése → 3. Regisztráció gomb                | Felhasználó adatai elmentődnek, bejelentkezés oldalra irányítás | Funkcionális |
-| T-02 | Hibás regisztráció | Hiányos vagy érvénytelen adatok beküldése | 1. Üres mezők → 2. Küldés                                                | Hibaüzenet jelenik meg, adat nem mentődik | Funkcionális |
-| T-03 | Bejelentkezés | Regisztrált felhasználóval belépés | 1. Adatok megadása → 2. Login                                            | Főoldal megjelenik, profilikon látható | Funkcionális |
-| T-04 | Kijelentkezés | Aktív felhasználó kijelentkezése | 1. Menü → 2. Logout                                                      | Login oldalra navigálás, munkamenet lezárva | Funkcionális |
-| T-05 | Új ruhadarab feltöltése | Kép és adatok feltöltése | 1. Új ruhadarab feltöltése oldal → 2. Fájl + mezők kitöltése → 3. Mentés | Új elem megjelenik a listában | Funkcionális |
-| T-06 | Ruhadarab törlése | Feltöltött elem eltávolítása | 1. Törlés gomb → 2. Jóváhagyás                                           | Elem törlődik, lista frissül | Funkcionális |
-| T-07 | Outfit összeállítás | Ruhadarabokból szett létrehozása | 1. Új outfit készítése oldal → 2. Elemvariálás → 3. Mentés               | Új outfit megjelenik a galériában | Funkcionális |
-| T-08 | Időjárás API működés | Külső API-ból adatlekérés | 1. Főoldal betöltése                                                     | Aktuális időjárási adatok megjelennek | Integrációs |
-| T-09 | Statisztika generálása | Viselési gyakoriság kijelzése | 1. Főoldal betöltése                                                     | Megfelelő aggregált adatok jelennek meg | Funkcionális |
-| T-10 | Teljesítményteszt | Oldalbetöltés mérése | 1. Oldal megnyitása különböző eszközökön                                 | Betöltési idő ≤ 3 másodperc | Nemfunkcionális |
-| T-11 | Böngésző kompatibilitás | Különböző böngészőkben való működés | 1. Chrome, Firefox, Edge, Opera megnyitása                               | Azonos megjelenés és működés | Kompatibilitási |
-| T-12 | Adatperzisztencia | CRUD műveletek után adatok mentése az adatbázisba | 1. Új elem létrehozása → újraindítás után ellenőrzés                     | Adat megmarad az adatbázisban | Integrációs |
-
+| ID   | Tesztcím                | Leírás                                            | Lépések                                                                  | Elvárt eredmény                                                 | Teszttípus      |
+|------|-------------------------|---------------------------------------------------|--------------------------------------------------------------------------|-----------------------------------------------------------------|-----------------|
+| T-01 | Regisztráció működése   | Új felhasználó regisztrálása érvényes adatokkal   | 1. Megnyitás → 2. Adatok kitöltése → 3. Regisztráció gomb                | Felhasználó adatai elmentődnek, bejelentkezés oldalra irányítás | Funkcionális    |
+| T-02 | Hibás regisztráció      | Hiányos vagy érvénytelen adatok beküldése         | 1. Üres mezők → 2. Küldés                                                | Hibaüzenet jelenik meg, adat nem mentődik                       | Funkcionális    |
+| T-03 | Bejelentkezés           | Regisztrált felhasználóval belépés                | 1. Adatok megadása → 2. Login                                            | Főoldal megjelenik, profilikon látható                          | Funkcionális    |
+| T-04 | Kijelentkezés           | Aktív felhasználó kijelentkezése                  | 1. Menü → 2. Logout                                                      | Login oldalra navigálás, munkamenet lezárva                     | Funkcionális    |
+| T-05 | Új ruhadarab feltöltése | Kép és adatok feltöltése                          | 1. Új ruhadarab feltöltése oldal → 2. Fájl + mezők kitöltése → 3. Mentés | Új elem megjelenik a listában                                   | Funkcionális    |
+| T-06 | Ruhadarab törlése       | Feltöltött elem eltávolítása                      | 1. Törlés gomb → 2. Jóváhagyás                                           | Elem törlődik, lista frissül                                    | Funkcionális    |
+| T-07 | Outfit összeállítás     | Ruhadarabokból szett létrehozása                  | 1. Új outfit készítése oldal → 2. Elemvariálás → 3. Mentés               | Új outfit megjelenik a galériában                               | Funkcionális    |
+| T-08 | Időjárás API működés    | Külső API-ból adatlekérés                         | 1. Főoldal betöltése                                                     | Aktuális időjárási adatok megjelennek                           | Integrációs     |
+| T-09 | Statisztika generálása  | Viselési gyakoriság kijelzése                     | 1. Főoldal betöltése                                                     | Megfelelő aggregált adatok jelennek meg                         | Funkcionális    |
+| T-10 | Teljesítményteszt       | Oldalbetöltés mérése                              | 1. Oldal megnyitása különböző eszközökön                                 | Betöltési idő ≤ 3 másodperc                                     | Nemfunkcionális |
+| T-11 | Böngésző kompatibilitás | Különböző böngészőkben való működés               | 1. Chrome, Firefox, Edge, Opera megnyitása                               | Azonos megjelenés és működés                                    | Kompatibilitási |
+| T-12 | Adatperzisztencia       | CRUD műveletek után adatok mentése az adatbázisba | 1. Új elem létrehozása → újraindítás után ellenőrzés                     | Adat megmarad az adatbázisban                                   | Integrációs     |
 
 ## 12. Indítási terv (fejlesztői környezetben)
 
@@ -438,13 +474,14 @@ A tesztelés további céljai:
 4. **Alkalmazás elérése:**  
    Nyisd meg a böngészőben: [http://localhost:8080](http://localhost:8080)
 
-
 ## 13. Karbantartási terv
 
 Az alkalmazás folyamatos és megbízható működésének biztosítása érdekében szükséges a rendszer rendszeres és megfelelő
-karbantartása. Mivel az adatok egy relációs adatbázisban (PostgreSQL) kerülnek tárolásra, elengedhetetlen az adatbázis 
-szerver folyamatos felügyelete, biztonsági mentések készítése és az adatbázis optimalizálása. Emellett továbbra is figyelmet 
-kell fordítani a hibák kijavítására, a felhasználói élmény javítására és a webes technológiák fejlődéséből adódó lehetőségek 
+karbantartása. Mivel az adatok egy relációs adatbázisban (PostgreSQL) kerülnek tárolásra, elengedhetetlen az adatbázis
+szerver folyamatos felügyelete, biztonsági mentések készítése és az adatbázis optimalizálása. Emellett továbbra is
+figyelmet
+kell fordítani a hibák kijavítására, a felhasználói élmény javítására és a webes technológiák fejlődéséből adódó
+lehetőségek
 integrálására. Továbbá az új felhasználói igények megjelenésével szükségessé válhat új funkciók beépítése is.
 
 | Karbantartás típusa                       | Karbantartási tevékenység a rendszerben                                                                                                                         |
