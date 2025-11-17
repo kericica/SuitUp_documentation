@@ -69,41 +69,79 @@ A cél egy **modern, felhasználóbarát és személyre szabható** rendszer, am
 
 * A felhasználó regisztrál a rendszerben, megadva nevét, felhasználónevét és jelszavát.
 * A rendszer eltárolja az adatokat, és létrehozza a felhasználói fiókot.
+* **Megszorítások:**
+  * Egyedi felhasználónév megadása.
+  * Kötelező mezők: név, felhasználónév, jelszó.
 
 #### Bejelentkezés
 
 * A felhasználó megadja a felhasználónevét és a jelszavát, amelyet a rendszer hitelesít.
 * Bejelentkezés után a felhasználó a főoldalra kerül, ahol személyre szabott információkat lát.
+* **Megszorítások:**
+  * Csak regisztráció után tud bejelentkezni.
+  * Helyes felhasználónév-jelszó páros megadása.
 
 #### Kijelentkezés
 
 * A felhasználó a profil ikonra kattintva megnyitja a lenyíló menüt, ahol a "Kijelentkezés" opciót választja.
 * A rendszer bontja a munkamenetet és visszairányítja a felhasználót a Bejelentkezési oldalra.
+* **Megszorítások:**
+  * Csak a bejelentkezett felhasználó tud kijelentkezni.
 
 #### Ruhadarabok kezelése
 
 * **Új ruhadarab létrehozása:** a felhasználó feltölti a ruhadarab képének URL-jét, emellett különböző jellemzőket
   rendelhet hozzá: típus, szín, évszak, anyag, márka.
 * **Módosítás és törlés:** a felhasználó szerkesztheti vagy eltávolíthatja a már feltöltött ruhadarabokat.
-* **Szűrés:** a rendszer lehetővé teszi a ruhadarabok listázásának szűrését típus, szín és évszak alapján.
+* **Szűrés:** a rendszer lehetővé teszi a ruhadarabok listázásának szűrését típus, szín, évszak, márka, anyag és egyedi címke szerint.
 * **Megjelenítés:** a felhasználó megtekintheti az összes feltöltött ruhadarabot címkékkel és előnézeti képpel.
+* **Megszorítások:**
+  * *Új ruhadarab létrehozása:*
+    * Meg kell adni a ruhadarab képének URL-jét.
+    * Típust, évszakot és színt kell választani.
+    * A típus, évszak, szín, márka és anyag előre definiált listából választható.
+  * *Módosítás, törlés, szűrés és megjelenítés:*
+    * A ruhadarabnak léteznie kell.
+    * A felhasználó csak a saját ruhadarabjait látja, és csak ezeken tud műveleteket végezni.
+  * *Szűrés:*
+    * A szűrési paraméterek (típus, szín, évszak, anyag, márka) csak előre definiált értékek lehetnek, vagy a felhasználó által megadott címkék.
 
 #### Outfitek kezelése
 
 * **Új outfit létrehozása:** a felhasználó a feltöltött ruhadarabokból állíthat össze szetteket, amelyekhez nevet és
   évszakot rendelhet.
 * **Törlése:** a rendszer támogatja a korábban mentett kombinációk eltávolítását.
-* **Szűrés:** a rendszer lehetővé teszi az outfitek listázásának szűrését évszak alapján.
+* **Szűrés:** a rendszer lehetővé teszi az outfitek listázásának szűrését évszak és egyedi címke alapján.
+* **Keresés:** a rendszer lehetővé teszi az outfitek keresését a nevük alapján.
 * **Megjelenítés:** a felhasználó megtekintheti az összes mentett outfitet címkékkel és előnézeti képekkel.
+* * **Megszorítások:**
+  * *Új outfit létrehozása:*
+      * Meg kell adni az outfit képének URL-jét, nevét, és évszakot kell választani.
+      * Az évszak előre definiált listából választható.
+  * *Törlés, szűrés, keresés és megjelenítés:*
+      * Outfitnek léteznie kell.
+      * A felhasználó csak a saját outfitjeit látja, és csak ezeken tud műveleteket végezni.
+  * *Szűrés:*
+    * A szűrési paraméter (évszak) csak előre definiált értékek lehetnek, vagy a felhasználó által megadott címkék.
+  * *Keresés:*
+    * Keresni csak az outfit neve alapján lehet.
 
 #### Integrációk
 
 * **Időjárás-integráció:** a rendszer külső API segítségével megjeleníti az aktuális időjárást.
+* **Megszorítások:**
+  * Külső API elérhetősége szükséges.
 
 #### Statisztikák és ajánlások
 
-* **Statisztikák:** a rendszer megjeleníti a leggyakrabban viselt ruhadarabokat.
+* **Statisztikák:** a rendszer megjeleníti a leggyakrabban viselt 10 ruhadarabot.
 * **Ajánlások:** a rendszer az aktuális évszakhoz illeszkedő ruhadarabokat javasol.
+* **Megszorítások:**
+  * *Statisztikák:*
+    * Csak a felhasználó adatai alapján készül.
+  * *Ajánlások:*
+    * Csak a felhasználó adatai alapján történik.
+    * Csak a rendszer által ismert évszakok alapján valósul meg.
 
 ### 3.3 Üzleti entitások
 
