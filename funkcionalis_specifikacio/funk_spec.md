@@ -112,7 +112,9 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 
 ### 6.2 Használati eset diagram
 
-![SuitUp! - Használati eset diagram](src/usecases.png)
+![SuitUp! - Használati eset diagram - Bejelentkezés/Regisztráció](src/log-reg.png)
+![SuitUp! - Használati eset diagram - Ruhadarabok kezelése](src/items.png)
+![SuitUp! - Használati eset diagram - Outfitek kezelése](src/fit.png)
 
 ## 7. Követelménylista
 
