@@ -133,30 +133,32 @@ A felhasználó a **felső navigációs menün** keresztül elérheti a fő funk
 
 ### 6.2 Használati eset diagram
 
-![SuitUp! - Használati eset diagram - Bejelentkezés/Regisztráció](src/log-reg.png)
-![SuitUp! - Használati eset diagram - Ruhadarabok kezelése](src/items.png)
-![SuitUp! - Használati eset diagram - Outfitek kezelése](src/fit.png)
+![SuitUp! - Használati eset diagram - Bejelentkezés/Regisztráció](src/log_reg.png)
+
+![SuitUp! - Használati eset diagram - Ruhadarabok kezelése](src/ruhadarab.png)
+
+![SuitUp! - Használati eset diagram - Outfitek kezelése](src/outfit.png)
 
 ## 7. Funkciókhoz rendelt követelmények
 
-| Funkció ID | Funkció neve                         | Kapcsolódó követelmények   | Követelmények leírása                                                                                                       |
-|------------|--------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|
-| **F1**     | Felhasználói jogosultságkezelés      | K1 – Regisztráció          | A felhasználó név, felhasználónév és jelszó megadásával regisztrál; hibás adatnál hibaüzenet; adatok titkosítva tárolódnak. |
-|            |                                      | K2 – Bejelentkezés         | A felhasználó felhasználónév és jelszó megadásával belép; hibás hitelesítő adatnál hibaüzenet.                              |
-| **F2**     | Főoldal és személyre szabott ajánlók | K3 – Landing page          | Bejelentkezés utáni főoldal; évszakhoz illő ajánlott ruhák; kedvencek; aktuális időjárás.                                   |
-|            |                                      | K4 – Legkedveltebb ruhák   | A leggyakrabban használt ruhadarabok megjelenítése.                                                                         |
-|            |                                      | K5 – Évszak szerinti ruhák | Aktuális évszaknak megfelelő ajánlások megjelenítése.                                                                       |
-| **F3**     | Ruhadarabok kezelése                 | K6 – Ruhadarabok oldal     | Minden ruhadarab megtekintése kártyás elrendezésben; módosítás és törlés gombokkal.                                         |
-|            |                                      | K7 – Ruhadarab szűrés      | Szűrés évszak, típus és szín alapján.                                                                                       |
-|            |                                      | K10 – Ruhadarab hozzáadása | Új ruhadarab feltöltése (típus, évszak, márka, szín, anyag, kép).                                                           |
-|            |                                      | K11 – Ruhadarab módosítása | Feltöltött ruhadarab adatainak szerkesztése.                                                                                |
-|            |                                      | K12 – Ruhadarab törlése    | Ruhadarab törlése a felhasználó által.                                                                                      |
-| **F4**     | Outfitek kezelése                    | K8 – Outfitek oldal        | Összes outfit kártyás megjelenítése.                                                                                        |
-|            |                                      | K9 – Outfit szűrés         | Szűrés évszak szerint.                                                                                                      |
-|            |                                      | K13 – Outfit összeállítása | Meglévő ruhadarabokból új outfit készítése; név és évszak megadása.                                                         |
-|            |                                      | K14 – Outfit törlése       | Felhasználó által létrehozott outfitek törlése.                                                                             |
-| **F5**     | Adatkezelés és integrációk           | K15 – PostgreSQL tárolás   | Minden adat PostgreSQL adatbázisban kerül tárolásra.                                                                        |
-|            |                                      | K16 – Időjárás lekérése    | Külső API-ból időjárás lekérése; minden oldalon megjelenik.                                                                 |
+| Funkció ID | Funkció neve                    | Kapcsolódó követelmények   | Követelmények leírása                                                                                                       |
+|------------|---------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| **F1**     | Felhasználói jogosultságkezelés | K1 – Regisztráció          | A felhasználó név, felhasználónév és jelszó megadásával regisztrál; hibás adatnál hibaüzenet; adatok titkosítva tárolódnak. |
+|            |                                 | K2 – Bejelentkezés         | A felhasználó felhasználónév és jelszó megadásával belép; hibás hitelesítő adatnál hibaüzenet.                              |
+| **F2**     | Főoldal és ruhadarab ajánlók    | K3 – Landing page          | Bejelentkezés utáni főoldal; évszakhoz illő ajánlott ruhák; kedvencek; aktuális időjárás.                                   |
+|            |                                 | K4 – Legkedveltebb ruhák   | A leggyakrabban használt ruhadarabok megjelenítése.                                                                         |
+|            |                                 | K5 – Évszak szerinti ruhák | Aktuális évszaknak megfelelő ajánlások megjelenítése.                                                                       |
+| **F3**     | Ruhadarabok kezelése            | K6 – Ruhadarabok oldal     | Minden ruhadarab megtekintése kártyás elrendezésben; módosítás és törlés gombokkal.                                         |
+|            |                                 | K7 – Ruhadarab szűrés      | Szűrés évszak, típus és szín alapján.                                                                                       |
+|            |                                 | K10 – Ruhadarab hozzáadása | Új ruhadarab feltöltése (típus, évszak, márka, szín, anyag, kép).                                                           |
+|            |                                 | K11 – Ruhadarab módosítása | Feltöltött ruhadarab adatainak szerkesztése.                                                                                |
+|            |                                 | K12 – Ruhadarab törlése    | Ruhadarab törlése a felhasználó által.                                                                                      |
+| **F4**     | Outfitek kezelése               | K8 – Outfitek oldal        | Összes outfit kártyás megjelenítése.                                                                                        |
+|            |                                 | K9 – Outfit szűrés         | Szűrés évszak szerint.                                                                                                      |
+|            |                                 | K13 – Outfit összeállítása | Meglévő ruhadarabokból új outfit készítése; név és évszak megadása.                                                         |
+|            |                                 | K14 – Outfit törlése       | Felhasználó által létrehozott outfitek törlése.                                                                             |
+| **F5**     | Adatkezelés és integrációk      | K15 – PostgreSQL tárolás   | Minden adat PostgreSQL adatbázisban kerül tárolásra.                                                                        |
+|            |                                 | K16 – Időjárás lekérése    | Külső API-ból időjárás lekérése; minden oldalon megjelenik.                                                                 |
 
 ## 8. Képernyőtervek
 
